@@ -11,6 +11,17 @@ gard.db: gard.owl
 gard.owl:
 	 python3 -m gard_owl_ingest
 
+# Analysis
+tmp/gard-terms-mapping-status.tsv tmp/obsoleted-gard-terms-in-mondo.tsv: tmp/mondo.sssom.tsv
+	python3 gard_owl_ingest/analysis/mondo_mapping_status.py
+
+# Utils
+tmp/:
+	mkdir -p tmp
+
+tmp/mondo.sssom.tsv: tmp/
+	wget http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv -O $@
+
 # SETUP / INSTALLATION -------------------------------------------------------------------------------------------------
 install:
 	pip install -r requirements.txt
