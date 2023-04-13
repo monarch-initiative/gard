@@ -12,7 +12,7 @@ gard.owl:
 	 python3 -m gard_owl_ingest
 
 # Analysis
-tmp/gard-terms-mapping-status.tsv tmp/obsoleted-gard-terms-in-mondo.tsv: tmp/mondo.sssom.tsv
+tmp/gard_terms_mapping_status.tsv tmp/obsoleted_gard_terms_in_mondo.tsv tmp/gard_unmapped_terms.txt: tmp/mondo.sssom.tsv
 	python3 gard_owl_ingest/analysis/mondo_mapping_status.py
 
 # Utils
