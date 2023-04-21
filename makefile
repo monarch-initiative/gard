@@ -17,9 +17,9 @@ tmp/gard_terms_mapping_status.tsv tmp/obsoleted_gard_terms_in_mondo.tsv tmp/gard
 
 # Utils
 tmp/:
-	mkdir -p tmp
+	mkdir -p $@
 
-tmp/mondo.sssom.tsv: tmp/
+tmp/input/mondo.sssom.tsv: tmp/
 	wget http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv -O $@
 
 # SETUP / INSTALLATION -------------------------------------------------------------------------------------------------
