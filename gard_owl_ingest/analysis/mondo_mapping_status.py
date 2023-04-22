@@ -4,6 +4,7 @@ Outputs going online here:
 https://drive.google.com/drive/folders/1jnBRzJNyShbf3vSq5ypvJYrVBiRr7iCb
 """
 import os
+import sys
 from pathlib import Path
 from typing import Dict, List, Set
 
@@ -16,31 +17,35 @@ PROJECT_DIR = SRC_DIR.parent
 DATA_DIR = PROJECT_DIR / 'data'
 TMP_DIR = PROJECT_DIR / 'tmp'
 TMP_INPUT_DIR = TMP_DIR / 'input'
-TMP_OUTPUT_DIR = TMP_DIR / 'output'
+OUT_DIR = DATA_DIR / 'analysis_outputs'
 DATASOURCE_CSV = DATA_DIR / 'GARD_disease_list.csv'
 MONDO_SSSOM_TSV = TMP_INPUT_DIR / 'mondo.sssom.tsv'
+GARD_MONDO_SSSOM_TSV = TMP_INPUT_DIR / 'mondo_hasdbxref_gard.sssom.tsv'
 
 
 # noinspection PyUnresolvedReferences Note_becausePycharmDoesntKnowAboutNamedTuples
 def gard_mondo_mapping_status():
     """Mapping status between GARD and Mondo"""
     os.makedirs(TMP_INPUT_DIR, exist_ok=True)
-    os.makedirs(TMP_OUTPUT_DIR, exist_ok=True)
+    os.makedirs(OUT_DIR, exist_ok=True)
 
     # Read data sources
     gard_df = pd.read_csv(DATASOURCE_CSV).fillna('')
     in_gard: List[int] = list(gard_df['GardID'])
     in_gard: Set[CURIE] = set([f'GARD:{x}' for x in in_gard])
 
-    # gard_in_mondo.txt: Currently obtained by grep on mondo.owl and some manual ETL.
-    # todo: gard_in_mondo.txt: Get via variation of mondo.sssom.tsv
-    # mondo_df = pd.read_csv(MONDO_SSSOM_TSV, sep='\t', comment='#')
-    # in_mondo: Set[CURIE] = set([x for x in mondo_df['object_id'] if x.startswith('GARD:')])
-    mondo_df = pd.read_csv(TMP_INPUT_DIR / 'gard_in_mondo.txt', header=None)
-    in_mondo: Set[CURIE] = set(mondo_df[0])
+    gard_mondo_sssom_df = pd.read_csv(GARD_MONDO_SSSOM_TSV, sep='\t', comment='#')[
+        ['subject_id', 'subject_label', 'object_id']].fillna('').rename(columns={
+            'subject_id': 'mondo_id',
+            'subject_label': 'mondo_label',
+            'object_id': 'gard_id'
+        })
+    in_mondo_sssom: Set[CURIE] = set(gard_mondo_sssom_df['gard_id'].tolist())
+    # - remove 0-padding which is now longer cannonical for GARD IDs:
+    in_mondo = set(['GARD:' + str(int(x.split(':')[1])) for x in in_mondo_sssom])
 
     mondo_sssom_df = pd.read_csv(MONDO_SSSOM_TSV, sep='\t', comment='#')[['subject_id', 'subject_label', 'object_id']]\
-        .rename(columns={
+        .fillna('').rename(columns={
             'subject_id': 'mondo_id',
             'subject_label': 'mondo_label',
             'object_id': 'mondo_object_id'
@@ -91,12 +96,15 @@ def gard_mondo_mapping_status():
         'gard' if x in in_gard and x not in in_mondo else
         'mondo' if x in in_mondo and x not in in_gard else
         'both')
-    existing_df.to_csv(TMP_OUTPUT_DIR / 'gard_terms_mapping_status.csv', index=False)
+    existing_df = existing_df.sort_values(['status', 'subject_id', 'in_gard', 'in_mondo'])
+    existing_gard_mondo_mappings: List[CURIE] = existing_df[existing_df['status'] == 'both']['subject_id'].tolist()
+    existing_df.to_csv(OUT_DIR / 'gard_terms_mapping_status.csv', index=False)
 
-    # Get proxy mappings between GARD and Mondo, through Orphanet and OMIM
+    # gard.sssom.tsv
+    # - Add proxy mappings between GARD and Mondo, through Orphanet and OMIM
     rows = []
     # todo: include: prefix_map etc as comment
-    # todo: include: cols: subject_label, mapping_justification, mondo_label
+    # todo: include: cols: subject_label, mapping_justification
     for s, o in gard_ordo_exact.items():
         rows.append({
             'subject_id': s,
@@ -130,27 +138,59 @@ def gard_mondo_mapping_status():
                 'predicate_id': 'skos:relatedMatch',
                 'object_id': o,
             })
-    gard_sssom_df = pd.DataFrame(rows)
-    gard_sssom_df2 = pd.merge(
-        gard_sssom_df, mondo_sssom_df, how='left', left_on='object_id', right_on='mondo_object_id').fillna('')\
+    gard_sssom_proxy_df = pd.DataFrame(rows)
+    gard_sssom_proxy_df2 = pd.merge(
+        gard_sssom_proxy_df, mondo_sssom_df, how='left', left_on='object_id', right_on='mondo_object_id').fillna('')\
         .sort_values(by='subject_id')
-    del gard_sssom_df2['mondo_object_id']
-    gard_sssom_df2.to_csv(TMP_OUTPUT_DIR / 'gard.sssom.tsv', index=False, sep='\t')
+    del gard_sssom_proxy_df2['mondo_object_id']
+    gard_sssom_proxy_df2['gard_mondo_mapping_type'] = gard_sssom_proxy_df2.apply(
+        lambda x: 'proxy_existing' if x.subject_id in existing_gard_mondo_mappings
+        else 'proxy_new' if x.mondo_id != '' else 'unmapped_proxy_or_direct', axis=1)
+    # - Filter: proxy_existing: Because proxy info not needed for existing mappings to be concatenated
+    gard_sssom_proxy_df3 = gard_sssom_proxy_df2[gard_sssom_proxy_df2['gard_mondo_mapping_type'] != 'proxy_existing']
+    # - Add existing mappings
+    rows = []
+    for row in gard_mondo_sssom_df.itertuples():
+        rows.append({
+            'subject_id': row.gard_id,
+            'predicate_id': '',
+            'object_id': '',
+            'mondo_id': row.mondo_id,
+            'mondo_label': row.mondo_label,
+            'gard_mondo_mapping_type': 'direct_existing',
+        })
+    gard_sssom_direct_df = pd.DataFrame(rows)
+    # todo: ideally, would sort proxy_new -> unmapped... -> direct_existing
+    # todo: ideally would have last 3 col order: gard_mondo_mapping_type, mondo_id, mondo_label
+    gard_sssom_df = pd.concat([gard_sssom_proxy_df3, gard_sssom_direct_df])\
+        .sort_values(['gard_mondo_mapping_type', 'subject_id', 'predicate_id', 'object_id', 'mondo_id', 'mondo_label'])
+    gard_sssom_df.to_csv(OUT_DIR / 'gard.sssom.tsv', index=False, sep='\t')
 
     # Get a list of obsolete GARD terms that are still in Mondo
     obs_gard_in_mondo_df = pd.DataFrame()
-    obs_gard_in_mondo_df['id'] = [x.split(':')[1] for x in in_mondo_not_in_gard]
+    obs_gard_in_mondo_df['id'] = sorted([x for x in in_mondo_not_in_gard])
     obs_gard_in_mondo_df = obs_gard_in_mondo_df.sort_values(by='id')
-    obs_gard_in_mondo_df.to_csv(TMP_OUTPUT_DIR / 'obsoleted_gard_terms_in_mondo.txt', index=False, header=False)
+    obs_gard_in_mondo_df.to_csv(OUT_DIR / 'obsoleted_gard_terms_in_mondo.txt', index=False, header=False)
 
-    # Get a list of GARD terms that are not in Mondo
-    unmapped_df = gard_sssom_df2[gard_sssom_df2['mondo_id'] == '']
-    unmapped_ids = unmapped_df['subject_id'].unique()  # 2023/04/21: n=193
-    unmapped_df = pd.DataFrame()
-    unmapped_df['subject_id'] = unmapped_ids
-    unmapped_df.to_csv(TMP_OUTPUT_DIR / 'gard_unmapped_terms.txt', index=False, header=False)
+    # - Get a list of GARD terms that are not in Mondo
+    unmapped_df = gard_sssom_df[gard_sssom_df['gard_mondo_mapping_type'] == 'unmapped_proxy_or_direct']
+    unmapped_ids = sorted(unmapped_df['subject_id'].unique())  # 181
+    unmapped_df2 = pd.DataFrame()
+    unmapped_df2['subject_id'] = unmapped_ids
+    unmapped_df2 = unmapped_df2.sort_values(by='subject_id')
+    unmapped_df2.to_csv(OUT_DIR / 'gard_unmapped_terms.txt', index=False, header=False)
+
+    # Report
+    print(f'Unmapped GARD terms: {len(unmapped_ids)} of {len(gard_df)} '
+          f'({round(len(unmapped_ids) / len(gard_df) * 100, 2)}%)')
+    print(f'Mapped GARD terms: {len(gard_df) - len(unmapped_ids)} of {len(gard_df)} '
+          f'({round((len(gard_df) - len(unmapped_ids)) / len(gard_df) * 100, 2)}%)')
     return
 
 
 if __name__ == '__main__':
-    gard_mondo_mapping_status()
+    try:
+        gard_mondo_mapping_status()
+    except FileNotFoundError as e:
+        print(e)
+        print('To resolve any missing files, run: make download_inputs', file=sys.stderr)
