@@ -1,4 +1,4 @@
-.PHONY: all
+.PHONY: all download_inputs
 
 
 # MAIN COMMANDS / GOALS ------------------------------------------------------------------------------------------------
@@ -12,15 +12,20 @@ gard.owl:
 	 python3 -m gard_owl_ingest
 
 # Analysis
-tmp/gard-terms-mapping-status.tsv tmp/obsoleted-gard-terms-in-mondo.tsv: tmp/mondo.sssom.tsv
+tmp/gard_terms_mapping_status.tsv tmp/obsoleted_gard_terms_in_mondo.tsv tmp/gard_unmapped_terms.txt: tmp/mondo.sssom.tsv
 	python3 gard_owl_ingest/analysis/mondo_mapping_status.py
 
 # Utils
-tmp/:
-	mkdir -p tmp
+tmp/input/:
+	mkdir -p $@
 
-tmp/mondo.sssom.tsv: tmp/
+tmp/input/mondo.sssom.tsv: tmp/input/
 	wget http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv -O $@
+
+tmp/input/mondo_hasdbxref_gard.sssom.tsv: tmp/input/
+	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_hasdbxref_gard.sssom.tsv -O $@
+
+download_inputs: tmp/input/mondo.sssom.tsv tmp/input/mondo_hasdbxref_gard.sssom.tsv
 
 # SETUP / INSTALLATION -------------------------------------------------------------------------------------------------
 install:
