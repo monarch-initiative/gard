@@ -1,14 +1,12 @@
-.PHONY: all download_inputs
+.PHONY: all download_inputs release
+TODAY ?=$(shell date +%Y-%m-%d)
+VERSION=v$(TODAY)
 
 
 # MAIN COMMANDS / GOALS ------------------------------------------------------------------------------------------------
-all: gard.db
+all: release/gard.owl release
 
-# TODO: Dockerized SemSQL I think is best way to do this
-gard.db: gard.owl
-	echo TODO
-
-gard.owl:
+release/gard.owl release/gard.sssom.tsv:
 	 python3 -m gard_owl_ingest
 
 # Analysis
@@ -26,6 +24,10 @@ tmp/input/mondo_hasdbxref_gard.sssom.tsv: tmp/input/
 	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_hasdbxref_gard.sssom.tsv -O $@
 
 download_inputs: tmp/input/mondo.sssom.tsv tmp/input/mondo_hasdbxref_gard.sssom.tsv
+
+release:
+	@test $(VERSION)
+	gh release create $(VERSION) --notes "New release." --title "$(VERSION)" release/*
 
 # SETUP / INSTALLATION -------------------------------------------------------------------------------------------------
 install:
