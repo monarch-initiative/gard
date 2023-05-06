@@ -1,0 +1,9 @@
+creator_id: 0000-0002-2906-7319
+curie_map:
+  GARD: http://purl.obolibrary.org/obo/GARD_
+  Orphanet: http://www.orpha.net/ORDO/Orphanet_
+  OMIM: https://omim.org/entry/
+  OMIMPS: https://omim.org/phenotypicSeries/PS
+  semapv: https://w3id.org/semapv/
+  skos: http://www.w3.org/2004/02/skos/core#
+license: http://w3id.org/sssom/license/unspecified

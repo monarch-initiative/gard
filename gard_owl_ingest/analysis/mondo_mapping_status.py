@@ -11,6 +11,7 @@ from typing import Dict, List, Set
 import pandas as pd
 
 CURIE = str
+MAPPING_PREDICATE = str
 ANALYSIS_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
 SRC_DIR = ANALYSIS_DIR.parent
 PROJECT_DIR = SRC_DIR.parent
@@ -21,9 +22,44 @@ OUT_DIR = DATA_DIR / 'analysis_outputs'
 DATASOURCE_CSV = DATA_DIR / 'GARD_disease_list.csv'
 MONDO_SSSOM_TSV = TMP_INPUT_DIR / 'mondo.sssom.tsv'
 GARD_MONDO_SSSOM_TSV = TMP_INPUT_DIR / 'mondo_hasdbxref_gard.sssom.tsv'
+MAPPING_PREDICATES: List[MAPPING_PREDICATE] = [
+    'skos:exactMatch', 'skos:narrowMatch', 'skos:broadMatch', 'skos:relatedMatch']
 
-
+# todo: move this into gard_owl_ingest.py
 # noinspection PyUnresolvedReferences Note_becausePycharmDoesntKnowAboutNamedTuples
+def gard_native_mappings(df: pd.DataFrame = None) -> Dict[CURIE, Dict[MAPPING_PREDICATE, List[CURIE]]]:
+    """From GARD source data, get mappings categorized by type of mapping"""
+    df = df if df is not None else pd.read_csv(DATASOURCE_CSV).fillna('')
+    in_gard: List[int] = list(df['GardID'])
+    in_gard: Set[CURIE] = set([f'GARD:{x}' for x in in_gard])
+    mappings = {k: {p: [] for p in MAPPING_PREDICATES} for k in in_gard}
+    for row in df.itertuples():
+        gard_id = f'GARD:{str(row.GardID)}'
+        # There are only 3 data sources - joeflack4
+        if row.DataSource == 'Orphanet':
+            # OmimMember: On 2023/04/21, for these rows, was 0 to many. Assuming narrow; but will consult. - joeflack4
+            mappings[gard_id]['skos:exactMatch'].append(f'Orphanet:{row.SourceID}')
+            mims: List[CURIE] = [f'OMIM:{x}' for x in row.OmimMember[1:-1].split(', ')] if row.OmimMember else []
+            if mims:
+                mappings[gard_id]['skos:narrowMatch'].extend(mims)
+        elif row.DataSource == 'Orphanet+OMIM':
+            # OmimMember: On 2023/04/21, for all of these rows, was only 1 OmimMember and  was the same as row.SourceID
+            mappings[gard_id]['skos:exactMatch'].append(f'OMIM:{row.SourceID}')
+        elif row.DataSource == 'GARD':
+            # OmimMember: On 2023/04/21, 10 rows where row.DataSource == 'GARD'. 5 had OmimMembers; all only had 1 entry
+            mims: List[CURIE] = [f'OMIM:{x}' for x in row.OmimMember[1:-1].split(', ')] if row.OmimMember else []
+            if mims:
+                mappings[gard_id]['skos:relatedMatch'].extend(mims)
+        # todo: ordo_parents: What about when DataSource == 'GARD'? Will ParentOrphaCode ever exist? Should these marked
+        #  as related instead of broad? Currently, I believe no cases like this though, but should double check.
+        ordo_parents: List[CURIE] = \
+            [f'Orphanet:{x}' for x in row.ParentOrphaCode[1:-1].split(', ')] if row.ParentOrphaCode else []
+        if ordo_parents:
+            mappings[gard_id]['skos:broadMatch'].extend(ordo_parents)
+
+    return mappings
+
+
 def gard_mondo_mapping_status():
     """Mapping status between GARD and Mondo"""
     os.makedirs(TMP_INPUT_DIR, exist_ok=True)
@@ -55,35 +91,8 @@ def gard_mondo_mapping_status():
     all_ids = in_gard.union(in_mondo)
     in_mondo_not_in_gard = in_mondo.difference(in_gard)
 
-    # Geet Orphanet and OMIM (Orphanet+OMIM) mappings
-    gard_ordo_exact: Dict[str, str] = {}
-    gard_ordo_broad: Dict[str, List[str]] = {}
-    gard_omim_exact: Dict[str, str] = {}
-    gard_omim_narrow: Dict[str, List[str]] = {}
-    gard_omim_related: Dict[str, List[str]] = {}
-    for row in gard_df.itertuples():
-        gard_id = f'GARD:{str(row.GardID)}'
-        # There are only 3 data sources - joeflack4
-        if row.DataSource == 'Orphanet':
-            # OmimMember: On 2023/04/21, for these rows, was 0 to many. Assuming narrow; but will consult. - joeflack4
-            gard_ordo_exact[gard_id] = f'Orphanet:{row.SourceID}'
-            mims: List[CURIE] = [f'OMIM:{x}' for x in row.OmimMember[1:-1].split(', ')] if row.OmimMember else []
-            if mims:
-                gard_omim_narrow[gard_id] = mims
-        elif row.DataSource == 'Orphanet+OMIM':
-            # OmimMember: On 2023/04/21, for all of these rows, was only 1 OmimMember and  was the same as row.SourceID
-            gard_omim_exact[gard_id] = f'OMIM:{row.SourceID}'
-        elif row.DataSource == 'GARD':
-            # OmimMember: On 2023/04/21, 10 rows where row.DataSource == 'GARD'. 5 had OmimMembers; all only had 1 entry
-            mims: List[CURIE] = [f'OMIM:{x}' for x in row.OmimMember[1:-1].split(', ')] if row.OmimMember else []
-            if mims:
-                gard_omim_related[gard_id] = mims
-        # todo: ordo_parents: What about when DataSource == 'GARD'? Will ParentOrphaCode ever exist? Should these marked
-        #  as related instead of broad? Currently, I believe no cases like this though, but should double check.
-        ordo_parents: List[CURIE] = \
-            [f'Orphanet:{x}' for x in row.ParentOrphaCode[1:-1].split(', ')] if row.ParentOrphaCode else []
-        if ordo_parents:
-            gard_ordo_broad[gard_id] = ordo_parents
+    # Get Orphanet and OMIM (Orphanet+OMIM) mappings
+    mappings: Dict[CURIE: Dict[MAPPING_PREDICATE, List[CURIE]]] = gard_native_mappings(gard_df)
 
     # Get explicit, existing mapping status between GARD and Mondo
     # todo: sort by the `int` of GARD IDs. Account for existence of 1 single GARD ID that is 0-padded
@@ -105,39 +114,14 @@ def gard_mondo_mapping_status():
     rows = []
     # todo: include: prefix_map etc as comment
     # todo: include: cols: subject_label, mapping_justification
-    for s, o in gard_ordo_exact.items():
-        rows.append({
-            'subject_id': s,
-            'predicate_id': 'skos:exactMatch',
-            'object_id': o,
-        })
-    for s, o in gard_omim_exact.items():
-        rows.append({
-            'subject_id': s,
-            'predicate_id': 'skos:exactMatch',
-            'object_id': o,
-        })
-    for s, o_list in gard_ordo_broad.items():
-        for o in o_list:
-            rows.append({
-                'subject_id': s,
-                'predicate_id': 'skos:broadMatch',
-                'object_id': o,
-            })
-    for s, o_list in gard_omim_narrow.items():
-        for o in o_list:
-            rows.append({
-                'subject_id': s,
-                'predicate_id': 'skos:narrowMatch',
-                'object_id': o,
-            })
-    for s, o_list in gard_omim_related.items():
-        for o in o_list:
-            rows.append({
-                'subject_id': s,
-                'predicate_id': 'skos:relatedMatch',
-                'object_id': o,
-            })
+    for s, xref_dict in mappings.items():
+        for p, o_list in xref_dict.items():
+            for o in o_list:
+                rows.append({
+                    'subject_id': s,
+                    'predicate_id': p,
+                    'object_id': o,
+                })
     gard_sssom_proxy_df = pd.DataFrame(rows)
     gard_sssom_proxy_df2 = pd.merge(
         gard_sssom_proxy_df, mondo_sssom_df, how='left', left_on='object_id', right_on='mondo_object_id').fillna('')\
@@ -164,7 +148,7 @@ def gard_mondo_mapping_status():
     # todo: ideally would have last 3 col order: gard_mondo_mapping_type, mondo_id, mondo_label
     gard_sssom_df = pd.concat([gard_sssom_proxy_df3, gard_sssom_direct_df])\
         .sort_values(['gard_mondo_mapping_type', 'subject_id', 'predicate_id', 'object_id', 'mondo_id', 'mondo_label'])
-    gard_sssom_df.to_csv(OUT_DIR / 'gard.sssom.tsv', index=False, sep='\t')
+    gard_sssom_df.to_csv(OUT_DIR / 'gard-mondo.sssom-like.tsv', index=False, sep='\t')
 
     # Get a list of obsolete GARD terms that are still in Mondo
     obs_gard_in_mondo_df = pd.DataFrame()
