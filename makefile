@@ -1,3 +1,4 @@
+.DEFAULT_GOAL := all
 .PHONY: all download_inputs release
 TODAY ?=$(shell date +%Y-%m-%d)
 VERSION=v$(TODAY)

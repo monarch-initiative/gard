@@ -3,10 +3,9 @@ import os
 import subprocess
 import sys
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Dict, List
 
 import pandas as pd
-import yaml
 
 sys.path.insert(0, os.getcwd())
 from gard_owl_ingest.analysis.mondo_mapping_status import MAPPING_PREDICATES, gard_native_mappings
