@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := all
-.PHONY: all download_inputs release
+.PHONY: all download_inputs release deploy-release
 TODAY ?=$(shell date +%Y-%m-%d)
 VERSION=v$(TODAY)
 
@@ -25,6 +25,8 @@ tmp/input/mondo_hasdbxref_gard.sssom.tsv: tmp/input/
 	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_hasdbxref_gard.sssom.tsv -O $@
 
 download_inputs: tmp/input/mondo.sssom.tsv tmp/input/mondo_hasdbxref_gard.sssom.tsv
+
+deploy-release: release
 
 release:
 	@test $(VERSION)
