@@ -67,14 +67,16 @@ def run_ingest(outpath_owl: str = OUTPATH_OWL, outpath_sssom: str = OUTPATH_SSSO
         for pred, obj_list in mappings[curie_gard].items():
             for obj in obj_list:
                 # noinspection PyUnresolvedReferences Note_becausePycharmDoesntKnowAboutNamedTuples
+                category: str = '|'.join(row.DisorderType[1:-1].split(', '))
+                # noinspection PyUnresolvedReferences Note_becausePycharmDoesntKnowAboutNamedTuples
                 d_row = {
                     'subject_id': curie_gard,
                     'subject_label': row.SourceName,  # I think this is right; GARD doesn't change source label
                     'predicate_id': pred,
                     'object_id': obj,
                     'object_label': row.SourceName,
-                    'subject_category': row.DisorderType,
-                    'object_category': row.DisorderType,  # todo: I think correct category same, but if narrow/broad, not 100% sure
+                    'subject_category': category,
+                    'object_category': category,  # todo: I think correct category same, but if narrow/broad, not 100% sure
                     'object_source': row.DataSource,
                     'mapping_justification': 'semapv:ManualMappingCuration',
                 }
