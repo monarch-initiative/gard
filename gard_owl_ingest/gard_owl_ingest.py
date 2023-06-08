@@ -2,43 +2,27 @@
 import os
 import subprocess
 import sys
-from pathlib import Path
 from typing import Dict, List
 
 import pandas as pd
 
+
 sys.path.insert(0, os.getcwd())
-from gard_owl_ingest.analysis.mondo_mapping_status import MAPPING_PREDICATES, gard_native_mappings
+from gard_owl_ingest.config import CURIE, DATASOURCE_CSV, GARD_ONTOLOGY_IRI, GARD_PREFIX_MAP_STR, MAPPING_PREDICATE, \
+    MAPPING_PREDICATES, OMIMPS_PREFIX_MAP_STR, OMIM_PREFIX_MAP_STR, ORDO_PREFIX_MAP_STR, OUTPATH_OWL, \
+    OUTPATH_ROBOT_TEMPLATE, OUTPATH_SSSOM, ROBOT_PATH, SSSOM_METADATA_PATH
+from gard_owl_ingest.mondo_mapping_status import gard_mondo_mapping_status, gard_native_mappings
+from gard_owl_ingest.utils import write_tsv_with_comments
 
-CURIE = str
-MAPPING_PREDICATE = str
-SRC_DIR = Path(os.path.dirname(os.path.abspath(__file__)))
-PROJECT_DIR = SRC_DIR.parent
-DATA_DIR = PROJECT_DIR / 'data'
-TMP_DIR = PROJECT_DIR / 'tmp'
-RELEASE_DIR = PROJECT_DIR / 'release'
-DATASOURCE_CSV = DATA_DIR / 'GARD_disease_list.csv'
-OUTPATH_ROBOT_TEMPLATE = TMP_DIR / 'gard.robot.template.tsv'
-OUTPATH_OWL = RELEASE_DIR / 'gard.owl'
-OUTPATH_SSSOM = RELEASE_DIR / 'gard.sssom.tsv'
-# ROBOT_PATH = 'robot'  # 2023/04/19: Strangely, this worked. Then, an hour later, only /usr/local/bin/robot worked
-ROBOT_PATH = '/usr/local/bin/robot'
-SSSOM_METADATA_PATH = DATA_DIR / 'sssom-metadata.yml'
-GARD_ONTOLOGY_IRI = 'http://purl.obolibrary.org/obo/GARD/ontology'
-GARD_PURL = 'http://purl.obolibrary.org/obo/GARD_'
-GARD_PREFIX_MAP_STR = f'GARD: {GARD_PURL}'
-ORDO_PREFIX_MAP_STR = f'Orphanet: http://www.orpha.net/ORDO/Orphanet_'
-OMIM_PREFIX_MAP_STR = f'OMIM: https://omim.org/entry/'
-OMIMPS_PREFIX_MAP_STR = f'OMIMPS: https://omim.org/phenotypicSeries/PS'
 
-# TODO: Create SSSOM at the end of this
 # todo: later: split up OWL and SSSOM into different funcs
 def run_ingest(outpath_owl: str = OUTPATH_OWL, outpath_sssom: str = OUTPATH_SSSOM):
     """Run the ingest"""
+    # Set up
     src_df = pd.read_csv(DATASOURCE_CSV).fillna('')
     mappings: Dict[CURIE: Dict[MAPPING_PREDICATE, List[CURIE]]] = gard_native_mappings()
 
-    # Convert Pandas DataFrame tuple row representation to robot style row.
+    # - convert Pandas DataFrame tuple row representation to robot style row.
     d: Dict[CURIE, Dict[str, str]] = {}
     for row in src_df.itertuples():
         # noinspection PyUnresolvedReferences Note_becausePycharmDoesntKnowAboutNamedTuples
@@ -57,7 +41,7 @@ def run_ingest(outpath_owl: str = OUTPATH_OWL, outpath_sssom: str = OUTPATH_SSSO
             d_row[pred] = '|'.join(obj_list)
         d[curie_gard] = d_row
 
-    # SSSOM
+    # gard.sssom.tsv
     # - generate dataframe
     sssom_rows: List[Dict] = []
     for row in src_df.itertuples():
@@ -82,31 +66,22 @@ def run_ingest(outpath_owl: str = OUTPATH_OWL, outpath_sssom: str = OUTPATH_SSSO
                 }
                 sssom_rows.append(d_row)
     sssom_df = pd.DataFrame(sssom_rows)
-    # - write metadata
-    f = open(SSSOM_METADATA_PATH, "r")
-    lines = f.readlines()
-    f.close()
-    output_lines = []
-    for line in lines:
-        output_lines.append("# " + line)
-    metadata_str = ''.join(output_lines)
-    if os.path.exists(outpath_sssom):
-        os.remove(outpath_sssom)
-    f = open(outpath_sssom, 'a')
-    f.write(metadata_str)
-    f.close()
-    # write data
-    sssom_df.to_csv(outpath_sssom, index=False, sep='\t', mode='a')
+    write_tsv_with_comments(sssom_df, SSSOM_METADATA_PATH, outpath_sssom)
 
-    # OWL
-    # - Convert to robot.template (http://robot.obolibrary.org/template)
+    # output/analysis/ and some output/release/
+    # todo: refactor: it's kinda wonky that some things in this function get output into release
+    gard_mondo_mapping_status(mondo_predicate_filter=['skos:exactMatch'], gard_predicate_filter=['skos:exactMatch'])
+    gard_mondo_mapping_status()  # all mappings for Mondo::proxy and GARD::proxy
+
+    # gard.owl
+    # - convert to robot.template (http://robot.obolibrary.org/template)
     robot_subheader = {'ID': 'ID', 'Label': 'A rdfs:label', 'Type': 'TYPE', 'Parent Class': 'SC % SPLIT=|'} | \
                       {p: f'AI {p} SPLIT=|' for p in MAPPING_PREDICATES}
     robot_rows = [robot_subheader] + list(d.values())
     robot_df = pd.DataFrame(robot_rows)
     robot_df.to_csv(OUTPATH_ROBOT_TEMPLATE, index=False, sep='\t')
 
-    # - Convert to OWL
+    # - convert to OWL
     command = f'export ROBOT_JAVA_ARGS=-Xmx28G; ' \
               f'"{ROBOT_PATH}" template ' \
               f'--template "{OUTPATH_ROBOT_TEMPLATE}" ' \

@@ -1,0 +1,8 @@
+creator_id: 0000-0002-2906-7319
+curie_map:
+  GARD: http://purl.obolibrary.org/obo/GARD_
+  MONDO: http://purl.obolibrary.org/obo/MONDO_
+  oboInOwl: http://www.geneontology.org/formats/oboInOwl#
+  semapv: https://w3id.org/semapv/
+  skos: http://www.w3.org/2004/02/skos/core#
+license: http://w3id.org/sssom/license/unspecified
