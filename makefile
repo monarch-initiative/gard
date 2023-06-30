@@ -1,20 +1,26 @@
 .DEFAULT_GOAL := all
-.PHONY: all download_inputs release deploy-release
+.PHONY: all download-inputs deploy-release
 TODAY ?=$(shell date +%Y-%m-%d)
 VERSION=v$(TODAY)
 
 
 # MAIN COMMANDS / GOALS ------------------------------------------------------------------------------------------------
-all: release/gard.owl release
+all: release/gard.owl deploy-release
 
-release/gard.owl release/gard.sssom.tsv:
+release/gard.owl release/gard.sssom.tsv release/gard-mondo.sssom.tsv: | output/release/
 	 python3 -m gard_owl_ingest
 
 # Analysis
-tmp/gard_terms_mapping_status.tsv tmp/obsoleted_gard_terms_in_mondo.tsv tmp/gard_unmapped_terms.txt: tmp/mondo.sssom.tsv
-	python3 gard_owl_ingest/analysis/mondo_mapping_status.py
+tmp/gard_terms_mapping_status.tsv tmp/obsoleted_gard_terms_in_mondo.tsv tmp/gard_unmapped_terms.txt: tmp/input/mondo.sssom.tsv
+	python3 gard_owl_ingest/mondo_mapping_status.py
 
 # Utils
+output/:
+	mkdir -p $@
+
+output/release/: | output/
+	mkdir -p $@
+
 tmp/input/:
 	mkdir -p $@
 
@@ -22,15 +28,13 @@ tmp/input/mondo.sssom.tsv: tmp/input/
 	wget http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv -O $@
 
 tmp/input/mondo_hasdbxref_gard.sssom.tsv: tmp/input/
-	wget https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/mondo_hasdbxref_gard.sssom.tsv -O $@
+	wget http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_gard.sssom.tsv -O $@
 
-download_inputs: tmp/input/mondo.sssom.tsv tmp/input/mondo_hasdbxref_gard.sssom.tsv
+download-inputs: tmp/input/mondo.sssom.tsv tmp/input/mondo_hasdbxref_gard.sssom.tsv
 
-deploy-release: release
-
-release:
+deploy-release: | output/release/
 	@test $(VERSION)
-	gh release create $(VERSION) --notes "New release." --title "$(VERSION)" release/*
+	gh release create $(VERSION) --notes "New release." --title "$(VERSION)" output/release/*
 
 # SETUP / INSTALLATION -------------------------------------------------------------------------------------------------
 install:
@@ -45,7 +49,5 @@ help:
 	@echo "Creates all release artefacts.\n"
 	@echo "gard.owl"
 	@echo "Creates OWL artefact: gard.owl\n"
-	@echo "gard.db"
-	@echo "Creates SemanticSQL sqlite artefact: gard.db\n"
 	@echo "install"
 	@echo "Install's Python requirements.\n"
