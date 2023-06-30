@@ -239,7 +239,8 @@ def gard_mondo_mapping_status(
     write_tsv_with_comments(sssom_df, MONDO_SSSOM_METADATA_PATH, outpath_mondo_sssom)
 
     # - modify & save curation df
-    sssom_curate_df = sssom_curate_df.drop('mapping_justification', axis=1)
+    sssom_curate_df = sssom_curate_df.drop('mapping_justification', axis=1)\
+        .sort_values(by=['predicate_id', 'subject_id'])
     write_tsv_with_comments(sssom_curate_df, MONDO_SSSOM_METADATA_PATH, outpath_mondo_sssom_curate)
 
     if return_type == 'sssom':
