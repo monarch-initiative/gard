@@ -25,7 +25,7 @@ MONDO_SSSOM_METADATA_PATH = DATA_DIR / 'gard-mondo.sssom-metadata.yml'
 DATASOURCE_CSV = DATA_DIR / 'GARD_disease_list.csv'
 OUTPATH_ROBOT_TEMPLATE = TMP_DIR / 'gard.robot.template.tsv'
 MONDO_SSSOM_TSV = TMP_INPUT_DIR / 'mondo.sssom.tsv'
-GARD_MONDO_SSSOM_TSV = TMP_INPUT_DIR / 'mondo_hasdbxref_gard.sssom.tsv'
+GARD_MONDO_OLD_SSSOM_TSV = TMP_INPUT_DIR / 'mondo_hasdbxref_gard.sssom.tsv'
 # IRIs, IRI Prefixes, CURIEs
 GARD_ONTOLOGY_IRI = 'http://purl.obolibrary.org/obo/GARD/ontology'
 GARD_PURL = 'http://purl.obolibrary.org/obo/GARD_'
