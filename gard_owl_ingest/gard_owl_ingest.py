@@ -1,4 +1,8 @@
-"""GARD to OWL"""
+"""GARD to OWL
+
+Mapping outputs going online here:
+https://drive.google.com/drive/folders/1jnBRzJNyShbf3vSq5ypvJYrVBiRr7iCb
+"""
 import os
 import subprocess
 import sys
@@ -11,7 +15,7 @@ sys.path.insert(0, os.getcwd())
 from gard_owl_ingest.config import CURIE, DATASOURCE_CSV, GARD_ONTOLOGY_IRI, GARD_PREFIX_MAP_STR, MAPPING_PREDICATE, \
     MAPPING_PREDICATES, OMIMPS_PREFIX_MAP_STR, OMIM_PREFIX_MAP_STR, ORDO_PREFIX_MAP_STR, OUTPATH_OWL, \
     OUTPATH_ROBOT_TEMPLATE, OUTPATH_SSSOM, ROBOT_PATH, SSSOM_METADATA_PATH
-from gard_owl_ingest.mondo_mapping_status import gard_mondo_mapping_status, gard_native_mappings
+from gard_owl_ingest.mondo_mapping_status import gard_mondo_mapping_status, get_gard_native_mappings
 from gard_owl_ingest.utils import write_tsv_with_comments
 
 
@@ -20,7 +24,7 @@ def run_ingest(outpath_owl: str = OUTPATH_OWL, outpath_sssom: str = OUTPATH_SSSO
     """Run the ingest"""
     # Set up
     src_df = pd.read_csv(DATASOURCE_CSV).fillna('')
-    mappings: Dict[CURIE: Dict[MAPPING_PREDICATE, List[CURIE]]] = gard_native_mappings()
+    mappings: Dict[CURIE: Dict[MAPPING_PREDICATE, List[CURIE]]] = get_gard_native_mappings()
 
     # - convert Pandas DataFrame tuple row representation to robot style row.
     d: Dict[CURIE, Dict[str, str]] = {}
@@ -70,8 +74,8 @@ def run_ingest(outpath_owl: str = OUTPATH_OWL, outpath_sssom: str = OUTPATH_SSSO
 
     # output/analysis/ and some output/release/
     # todo: refactor: it's kinda wonky that some things in this function get output into release
-    gard_mondo_mapping_status(mondo_predicate_filter=['skos:exactMatch'], gard_predicate_filter=['skos:exactMatch'])
     gard_mondo_mapping_status()  # all mappings for Mondo::proxy and GARD::proxy
+    gard_mondo_mapping_status(mondo_predicate_filter=['skos:exactMatch'], gard_predicate_filter=['skos:exactMatch'])
 
     # gard.owl
     # - convert to robot.template (http://robot.obolibrary.org/template)

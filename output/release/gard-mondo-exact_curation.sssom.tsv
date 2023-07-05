@@ -1701,7 +1701,6 @@ GARD:15366	skos:exactMatch	MONDO:0011435	microcephaly 2, primary, autosomal rece
 GARD:15367	skos:exactMatch	MONDO:0011437	microcephaly 4, primary, autosomal recessive	OMIM:604321	skos:exactMatch
 GARD:15368	skos:exactMatch	MONDO:0011442	advanced sleep phase syndrome 1	OMIM:604348	skos:exactMatch
 GARD:1537	skos:exactMatch	MONDO:0000902	agenesis of the corpus callosum with peripheral neuropathy	Orphanet:1496	skos:exactMatch
-GARD:15370	skos:exactMatch			OMIM:604547	
 GARD:15372	skos:exactMatch	MONDO:0011482	dilated cardiomyopathy 1I	OMIM:604765	skos:exactMatch
 GARD:15373	skos:exactMatch	MONDO:0011488	microcephaly 3, primary, autosomal recessive	OMIM:604804	skos:exactMatch
 GARD:15374	skos:exactMatch	MONDO:0011502	Wolfram syndrome 2	OMIM:604928	skos:exactMatch
@@ -2265,7 +2264,6 @@ GARD:15916	skos:exactMatch	MONDO:0014073	dilated cardiomyopathy 1II	OMIM:615184	
 GARD:15917	skos:exactMatch	MONDO:0014076	dyskeratosis congenita, autosomal recessive 5	OMIM:615190	skos:exactMatch
 GARD:15918	skos:exactMatch	MONDO:0014083	agammaglobulinemia 7, autosomal recessive	OMIM:615214	skos:exactMatch
 GARD:15919	skos:exactMatch	MONDO:0014086	osteogenesis imperfecta type 15	OMIM:615220	skos:exactMatch
-GARD:15920	skos:exactMatch			OMIM:615221	
 GARD:15921	skos:exactMatch	MONDO:0014087	Smith-McCort dysplasia 2	OMIM:615222	skos:exactMatch
 GARD:15922	skos:exactMatch	MONDO:0014088	advanced sleep phase syndrome 2	OMIM:615224	skos:exactMatch
 GARD:15923	skos:exactMatch	MONDO:0014093	retinitis pigmentosa 66	OMIM:615233	skos:exactMatch
@@ -2633,7 +2631,6 @@ GARD:16271	skos:exactMatch	MONDO:0033371	developmental and epileptic encephalopa
 GARD:16272	skos:exactMatch	MONDO:0044205	Shwachman-Diamond syndrome 2	OMIM:617941	skos:exactMatch
 GARD:16273	skos:exactMatch	MONDO:0054780	elliptocytosis 3	OMIM:617948	skos:exactMatch
 GARD:16274	skos:exactMatch	MONDO:0054729	spermatogenic failure 25	OMIM:617960	skos:exactMatch
-GARD:16275	skos:exactMatch			OMIM:617970	
 GARD:16276	skos:exactMatch	MONDO:0018023	hemoglobin M disease	OMIM:617971	skos:exactMatch
 GARD:16277	skos:exactMatch	MONDO:0020835	methemoglobinemia, alpha type	OMIM:617973	skos:exactMatch
 GARD:16278	skos:exactMatch	MONDO:0054804	microcephaly 21, primary, autosomal recessive	OMIM:617983	skos:exactMatch
@@ -3307,7 +3304,6 @@ GARD:16927	skos:exactMatch	MONDO:0005028	esophageal adenocarcinoma	Orphanet:9997
 GARD:16928	skos:exactMatch	MONDO:0011441	complex regional pain syndrome type 1	Orphanet:99995	skos:exactMatch
 GARD:16929	skos:exactMatch	MONDO:0015033	ABeta amyloidosis, dutch type	Orphanet:100006	skos:exactMatch
 GARD:16930	skos:exactMatch	MONDO:0007098	ACys amyloidosis	Orphanet:100008	skos:exactMatch
-GARD:16931	skos:exactMatch			Orphanet:100032	
 GARD:16932	skos:exactMatch	MONDO:0007093	hypomaturation-hypoplastic amelogenesis imperfecta with taurodontism	Orphanet:100034	skos:exactMatch
 GARD:16933	skos:exactMatch	MONDO:0015053	hereditary angioedema type 1	Orphanet:100050	skos:exactMatch
 GARD:16934	skos:exactMatch	MONDO:0015054	hereditary angioedema type 2	Orphanet:100051	skos:exactMatch
@@ -4646,7 +4642,6 @@ GARD:18236	skos:exactMatch	MONDO:0012665	cataract 33	OMIM:611391	skos:exactMatch
 GARD:18237	skos:exactMatch	MONDO:0008210	patterned macular dystrophy 1	OMIM:169150	skos:exactMatch
 GARD:18238	skos:exactMatch	MONDO:0012162	patterned macular dystrophy 2	OMIM:608970	skos:exactMatch
 GARD:18239	skos:exactMatch	MONDO:0009979	reticular dystrophy of the retinal pigment epithelium	OMIM:179840	skos:exactMatch
-GARD:18240	skos:exactMatch			OMIM:267800	
 GARD:18241	skos:exactMatch	MONDO:0014955	RCBTB1-related retinopathy	OMIM:617175	skos:exactMatch
 GARD:18242	skos:exactMatch	MONDO:0010081	subaortic stenosis, membranous	OMIM:271950	skos:exactMatch
 GARD:18243	skos:exactMatch	MONDO:0007338	cleft soft palate	OMIM:119570	skos:exactMatch
@@ -5070,9 +5065,6 @@ GARD:18652	skos:exactMatch	MONDO:0014969	isolated sedoheptulokinase deficiency	O
 GARD:18653	skos:exactMatch	MONDO:0014866	Charcot-Marie-Tooth disease axonal type 2T	Orphanet:443950	skos:exactMatch
 GARD:18654	skos:exactMatch	MONDO:0009477	Stromme syndrome	Orphanet:444069	skos:exactMatch
 GARD:18655	skos:exactMatch	MONDO:0060533	microcephaly, short stature, and limb abnormalities	Orphanet:572773	skos:exactMatch
-GARD:18656	skos:exactMatch			OMIM:141749	
-GARD:18657	skos:exactMatch			OMIM:142470	
-GARD:18658	skos:exactMatch			OMIM:305435	
 GARD:18659	skos:exactMatch	MONDO:0011416	generalized epilepsy with febrile seizures plus, type 1	OMIM:604233	skos:exactMatch
 GARD:18660	skos:exactMatch	MONDO:0011421	mitochondrial complex V (ATP synthase) deficiency, nuclear type 1	OMIM:604273	skos:exactMatch
 GARD:18661	skos:exactMatch	MONDO:0011461	generalized epilepsy with febrile seizures plus, type 2	OMIM:604403	skos:exactMatch
@@ -5187,7 +5179,6 @@ GARD:18765	skos:exactMatch	MONDO:0016467	isotretinoin syndrome	Orphanet:2305	sko
 GARD:18766	skos:exactMatch	MONDO:0016514	epidermolysis bullosa simplex with anodontia/hypodontia	Orphanet:2325	skos:exactMatch
 GARD:18767	skos:exactMatch	MONDO:0016515	Kallmann syndrome-heart disease syndrome	Orphanet:2326	skos:exactMatch
 GARD:18768	skos:exactMatch	MONDO:0016518	isolated punctate palmoplantar keratoderma	Orphanet:2338	skos:exactMatch
-GARD:18769	skos:exactMatch			Orphanet:2416	
 GARD:18770	skos:exactMatch	MONDO:0016570	primary pulmonary lymphoma	Orphanet:2420	skos:exactMatch
 GARD:18771	skos:exactMatch	MONDO:0016578	obsolete mitochondrial oxidative phosphorylation disorder due to nuclear DNA anomalies	Orphanet:2443	skos:exactMatch
 GARD:18772	skos:exactMatch	MONDO:0016580	congenital pulmonary airway malformation	Orphanet:2444	skos:exactMatch
@@ -5538,24 +5529,15 @@ GARD:19101	skos:exactMatch	MONDO:0019534	mixed-type autoimmune hemolytic anemia	
 GARD:19102	skos:exactMatch	MONDO:0019535	drug-induced autoimmune hemolytic anemia	Orphanet:90037	skos:exactMatch
 GARD:19103	skos:exactMatch	MONDO:0019537	hemoglobin D disease	Orphanet:90039	skos:exactMatch
 GARD:19104	skos:exactMatch	MONDO:0019538	Gaisbock syndrome	Orphanet:90041	skos:exactMatch
-GARD:19105	skos:exactMatch			Orphanet:90051	
-GARD:19106	skos:exactMatch			Orphanet:90052	
-GARD:19107	skos:exactMatch			Orphanet:90053	
-GARD:19108	skos:exactMatch			Orphanet:90056	
 GARD:19109	skos:exactMatch	MONDO:0043797	spinal cord injury	Orphanet:90058	skos:exactMatch
 GARD:19110	skos:exactMatch	MONDO:0019540	diffuse alveolar hemorrhage	Orphanet:90060	skos:exactMatch
 GARD:19111	skos:exactMatch	MONDO:0019541	non-infectious posterior uveitis	Orphanet:90061	skos:exactMatch
 GARD:19112	skos:exactMatch	MONDO:0019542	acute liver failure	Orphanet:90062	skos:exactMatch
-GARD:19113	skos:exactMatch			Orphanet:90064	
 GARD:19114	skos:exactMatch	MONDO:0019543	acquired aneurysmal subarachnoid hemorrhage	Orphanet:90065	skos:exactMatch
 GARD:19115	skos:exactMatch	MONDO:0019544	cocaine intoxication	Orphanet:90068	skos:exactMatch
 GARD:19116	skos:exactMatch	MONDO:0019545	systemic monochloroacetate poisoning	Orphanet:90069	skos:exactMatch
-GARD:19117	skos:exactMatch			Orphanet:90073	
-GARD:19118	skos:exactMatch			Orphanet:90076	
 GARD:19119	skos:exactMatch	MONDO:0019546	obsolete other acquired skin disease	Orphanet:90077	skos:exactMatch
 GARD:1912	skos:exactMatch	MONDO:0007471	Doyne honeycomb retinal dystrophy	Orphanet:75376	skos:exactMatch
-GARD:19120	skos:exactMatch			Orphanet:90078	
-GARD:19121	skos:exactMatch			Orphanet:90080	
 GARD:19122	skos:exactMatch	MONDO:0005797	HIV wasting syndrome	Orphanet:90081	skos:exactMatch
 GARD:19123	skos:exactMatch	MONDO:0019549	severe early-onset axonal neuropathy due to MFN2 deficiency	Orphanet:90118	skos:exactMatch
 GARD:19124	skos:exactMatch	MONDO:0019550	hereditary motor and sensory neuropathy with acrodystrophy	Orphanet:90119	skos:exactMatch
@@ -5587,7 +5569,6 @@ GARD:19149	skos:exactMatch	MONDO:0019594	obsolete 46,XY disorder of sex developm
 GARD:19150	skos:exactMatch	MONDO:0019595	obsolete 46,XY disorder of sex development due to adrenal and testicular steroidogenesis defect	Orphanet:90786	skos:exactMatch
 GARD:19151	skos:exactMatch	MONDO:0019596	obsolete 46,XY disorder of sex development due to testicular steroidogenesis defect	Orphanet:90787	skos:exactMatch
 GARD:19152	skos:exactMatch	MONDO:0019602	obsolete other inborn metabolic disease	Orphanet:91088	skos:exactMatch
-GARD:19153	skos:exactMatch			Orphanet:91127	
 GARD:19154	skos:exactMatch	MONDO:0019604	acquired monoclonal Ig light chain-associated Fanconi syndrome	Orphanet:91136	skos:exactMatch
 GARD:19155	skos:exactMatch	MONDO:0019607	unspecified juvenile idiopathic arthritis	Orphanet:91140	skos:exactMatch
 GARD:19156	skos:exactMatch	MONDO:0019608	46,XX disorder of sex development induced by maternal-derived androgen	Orphanet:91144	skos:exactMatch
@@ -5682,7 +5663,6 @@ GARD:19242	skos:exactMatch	MONDO:0019769	X-linked intellectual disability, Suthe
 GARD:19243	skos:exactMatch	MONDO:0019771	oromandibular dystonia	Orphanet:93958	skos:exactMatch
 GARD:19244	skos:exactMatch	MONDO:0019782	humero-ulnar synostosis	Orphanet:94056	skos:exactMatch
 GARD:19245	skos:exactMatch	MONDO:0019783	neovascular glaucoma	Orphanet:94058	skos:exactMatch
-GARD:19246	skos:exactMatch			Orphanet:94059	
 GARD:19247	skos:exactMatch	MONDO:0019786	severe intellectual disability-epilepsy-anal anomalies-distal phalangeal hypoplasia	Orphanet:94066	skos:exactMatch
 GARD:19248	skos:exactMatch	MONDO:0019788	non-secreting paraganglioma	Orphanet:94080	skos:exactMatch
 GARD:19249	skos:exactMatch	MONDO:0019789	cytophagic histiocytic panniculitis	Orphanet:94087	skos:exactMatch
@@ -5913,7 +5893,6 @@ GARD:19471	skos:exactMatch	MONDO:0020120	skeletal muscle disorder	Orphanet:98472
 GARD:19472	skos:exactMatch	MONDO:0020123	metabolic myopathy	Orphanet:98486	skos:exactMatch
 GARD:19473	skos:exactMatch	MONDO:0020124	neuromuscular junction disease	Orphanet:98491	skos:exactMatch
 GARD:19474	skos:exactMatch	MONDO:0020125	acquired neuromuscular junction disease	Orphanet:98494	skos:exactMatch
-GARD:19475	skos:exactMatch			Orphanet:98495	
 GARD:19476	skos:exactMatch	MONDO:0020126	obsolete rare peripheral neuropathy	Orphanet:98496	skos:exactMatch
 GARD:19477	skos:exactMatch	MONDO:0020128	motor neuron disorder	Orphanet:98503	skos:exactMatch
 GARD:19478	skos:exactMatch	MONDO:0024257	hereditary motor neuron disease	Orphanet:98505	skos:exactMatch
@@ -6001,19 +5980,7 @@ GARD:19558	skos:exactMatch	MONDO:0020294	atrial defect and interatrial communica
 GARD:19559	skos:exactMatch	MONDO:0020295	congenital pulmonary veins anomaly	Orphanet:98729	skos:exactMatch
 GARD:19560	skos:exactMatch	MONDO:0020296	congenital arteriovenous fistula	Orphanet:98731	skos:exactMatch
 GARD:19561	skos:exactMatch	MONDO:0020297	Noonan syndrome and Noonan-related syndrome	Orphanet:98733	skos:exactMatch
-GARD:19562	skos:exactMatch			Orphanet:98737	
-GARD:19563	skos:exactMatch			Orphanet:98738	
-GARD:19564	skos:exactMatch			Orphanet:98739	
-GARD:19565	skos:exactMatch			Orphanet:98740	
-GARD:19566	skos:exactMatch			Orphanet:98741	
-GARD:19567	skos:exactMatch			Orphanet:98742	
 GARD:19568	skos:exactMatch	MONDO:0038261	obsolete genetic neurological channelopathy of the central nervous system	Orphanet:98743	skos:exactMatch
-GARD:19569	skos:exactMatch			Orphanet:98744	
-GARD:19570	skos:exactMatch			Orphanet:98745	
-GARD:19571	skos:exactMatch			Orphanet:98746	
-GARD:19572	skos:exactMatch			Orphanet:98747	
-GARD:19573	skos:exactMatch			Orphanet:98748	
-GARD:19574	skos:exactMatch			Orphanet:98749	
 GARD:19575	skos:exactMatch	MONDO:0038268	autoimmune neurological channelopathy	Orphanet:98750	skos:exactMatch
 GARD:19576	skos:exactMatch	MONDO:0020301	Prader-Willi syndrome due to paternal 15q11q13 deletion	Orphanet:98793	skos:exactMatch
 GARD:19577	skos:exactMatch	MONDO:0020302	Angelman syndrome due to maternal 15q11q13 deletion	Orphanet:98794	skos:exactMatch
@@ -6325,7 +6292,6 @@ GARD:19880	skos:exactMatch	MONDO:0015292	endotheliitis	Orphanet:137602	skos:exac
 GARD:19881	skos:exactMatch	MONDO:0015293	segmental outgrowth-lipomatosis-arteriovenous malformation-epidermal nevus syndrome	Orphanet:137608	skos:exactMatch
 GARD:19882	skos:exactMatch	MONDO:0015295	intractable diarrhea-choanal atresia-eye anomalies syndrome	Orphanet:137622	skos:exactMatch
 GARD:19883	skos:exactMatch	MONDO:0015296	cardiac anomalies-heterotaxy syndrome	Orphanet:137628	skos:exactMatch
-GARD:19884	skos:exactMatch			Orphanet:137698	
 GARD:19885	skos:exactMatch	MONDO:0015303	macular amyloidosis	Orphanet:137814	skos:exactMatch
 GARD:19886	skos:exactMatch	MONDO:0015305	obsolete rare endometriosis	Orphanet:137820	skos:exactMatch
 GARD:19887	skos:exactMatch	MONDO:0015307	Madras motor neuron disease	Orphanet:137867	skos:exactMatch
@@ -6716,7 +6682,6 @@ GARD:20251	skos:exactMatch	MONDO:0015932	non-syndromic urogenital tract malforma
 GARD:20252	skos:exactMatch	MONDO:0015933	non-syndromic urogenital tract malformation of male	Orphanet:182121	skos:exactMatch
 GARD:20253	skos:exactMatch	MONDO:0015934	obsolete non-syndromic urogenital tract malformation of male and female	Orphanet:182124	skos:exactMatch
 GARD:20254	skos:exactMatch	MONDO:0015936	obsolete rare tumor of endocrine glands	Orphanet:182130	skos:exactMatch
-GARD:20255	skos:exactMatch			Orphanet:182222	
 GARD:20256	skos:exactMatch	MONDO:0015939	obsolete systemic autoimmune disease	Orphanet:182228	skos:exactMatch
 GARD:20257	skos:exactMatch	MONDO:0015940	obsolete rare rheumatologic disease	Orphanet:182231	skos:exactMatch
 GARD:20258	skos:exactMatch	MONDO:0026141	obsolete genetic urticaria	Orphanet:182734	skos:exactMatch
@@ -6733,11 +6698,8 @@ GARD:20267	skos:exactMatch	MONDO:0021028	obsolete genetic nail anomaly	Orphanet:
 GARD:20268	skos:exactMatch	MONDO:0021029	genetic sebaceous gland anomaly	Orphanet:183460	skos:exactMatch
 GARD:20269	skos:exactMatch	MONDO:0026157	obsolete genetic pigmentation anomaly of the skin	Orphanet:183463	skos:exactMatch
 GARD:2027	skos:exactMatch	MONDO:0007492	early-onset generalized limb-onset dystonia	Orphanet:256	skos:exactMatch
-GARD:20270	skos:exactMatch			Orphanet:183466	
-GARD:20271	skos:exactMatch			Orphanet:183469	
 GARD:20272	skos:exactMatch	MONDO:0026160	obsolete genetic dermis disorder	Orphanet:183472	skos:exactMatch
 GARD:20273	skos:exactMatch	MONDO:0015948	obsolete rare genetic skin vascular disorder	Orphanet:183478	skos:exactMatch
-GARD:20274	skos:exactMatch			Orphanet:183481	
 GARD:20275	skos:exactMatch	MONDO:0015949	obsolete rare genetic subcutaneous tissue disorder	Orphanet:183484	skos:exactMatch
 GARD:20276	skos:exactMatch	MONDO:0015950	inherited skin tumor	Orphanet:183487	skos:exactMatch
 GARD:20277	skos:exactMatch	MONDO:0015951	hereditary photodermatosis	Orphanet:183490	skos:exactMatch
@@ -6772,8 +6734,6 @@ GARD:20304	skos:exactMatch	MONDO:0026192	obsolete genetic glomerular disease	Orp
 GARD:20305	skos:exactMatch	MONDO:0026193	obsolete genetic thrombotic microangiopathy	Orphanet:183589	skos:exactMatch
 GARD:20306	skos:exactMatch	MONDO:0015962	inherited renal tubular disease	Orphanet:183592	skos:exactMatch
 GARD:20307	skos:exactMatch	MONDO:0015963	obsolete inherited renal tumor	Orphanet:183595	skos:exactMatch
-GARD:20308	skos:exactMatch			Orphanet:183607	
-GARD:20309	skos:exactMatch			Orphanet:183616	
 GARD:2031	skos:exactMatch	MONDO:0016147	qualitative or quantitative defects of dystrophin	Orphanet:207085	skos:exactMatch
 GARD:20310	skos:exactMatch	MONDO:0015966	obsolete hereditary eye tumor	Orphanet:183619	skos:exactMatch
 GARD:20311	skos:exactMatch	MONDO:0026203	obsolete genetic respiratory malformation	Orphanet:183622	skos:exactMatch
@@ -6825,7 +6785,6 @@ GARD:20354	skos:exactMatch	MONDO:0016101	neurolymphomatosis	Orphanet:206586	skos
 GARD:20355	skos:exactMatch	MONDO:0016102	subacute inflammatory demyelinating polyneuropathy	Orphanet:206594	skos:exactMatch
 GARD:20356	skos:exactMatch	MONDO:0016103	isolated asymptomatic elevation of creatine phosphokinase	Orphanet:206599	skos:exactMatch
 GARD:20357	skos:exactMatch	MONDO:0016104	obsolete infectious disease with peripheral neuropathy	Orphanet:206613	skos:exactMatch
-GARD:20358	skos:exactMatch			Orphanet:206634	
 GARD:20359	skos:exactMatch	MONDO:0016105	acquired skeletal muscle disease	Orphanet:206638	skos:exactMatch
 GARD:20360	skos:exactMatch	MONDO:0016106	progressive muscular dystrophy	Orphanet:206644	skos:exactMatch
 GARD:20361	skos:exactMatch	MONDO:0016108	autosomal dominant distal myopathy	Orphanet:206650	skos:exactMatch
@@ -6862,7 +6821,6 @@ GARD:20391	skos:exactMatch	MONDO:0016142	qualitative or quantitative defects of 
 GARD:20392	skos:exactMatch	MONDO:0016143	qualitative or quantitative defects of gamma-sarcoglycan	Orphanet:207067	skos:exactMatch
 GARD:20393	skos:exactMatch	MONDO:0016144	qualitative or quantitative defects of delta-sarcoglycan	Orphanet:207070	skos:exactMatch
 GARD:20394	skos:exactMatch	MONDO:0016146	caveolinopathy	Orphanet:207078	skos:exactMatch
-GARD:20395	skos:exactMatch			Orphanet:207090	
 GARD:20396	skos:exactMatch	MONDO:0016149	qualitative or quantitative defects of merosin	Orphanet:207094	skos:exactMatch
 GARD:20397	skos:exactMatch	MONDO:0016150	qualitative or quantitative defects of integrin alpha-7	Orphanet:207098	skos:exactMatch
 GARD:20398	skos:exactMatch	MONDO:0016151	qualitative or quantitative defects of perlecan	Orphanet:207101	skos:exactMatch
@@ -6983,7 +6941,6 @@ GARD:20508	skos:exactMatch	MONDO:0016310	Niemann-Pick disease type C, adult neur
 GARD:20509	skos:exactMatch	MONDO:0016312	5-fluorouracil poisoning	Orphanet:217064	skos:exactMatch
 GARD:20510	skos:exactMatch	MONDO:0005312	pouchitis	Orphanet:217067	skos:exactMatch
 GARD:20511	skos:exactMatch	MONDO:0016314	obsolete rare carcinoma of pancreas	Orphanet:217074	skos:exactMatch
-GARD:20512	skos:exactMatch			Orphanet:217080	
 GARD:20513	skos:exactMatch	MONDO:0021081	anti-NMDA receptor encephalitis	Orphanet:217253	skos:exactMatch
 GARD:20514	skos:exactMatch	MONDO:0016319	congenital insensitivity to pain with hyperhidrosis	Orphanet:217399	skos:exactMatch
 GARD:20515	skos:exactMatch	MONDO:0016320	obsolete rare hereditary thrombophilia	Orphanet:217454	skos:exactMatch
@@ -7048,7 +7005,6 @@ GARD:20570	skos:exactMatch	MONDO:0016426	fusariosis	Orphanet:228119	skos:exactMa
 GARD:20571	skos:exactMatch	MONDO:0016428	multiple sclerosis variant	Orphanet:228145	skos:exactMatch
 GARD:20572	skos:exactMatch	MONDO:0016429	Marburg acute multiple sclerosis	Orphanet:228157	skos:exactMatch
 GARD:20573	skos:exactMatch	MONDO:0016432	heart-hand syndrome	Orphanet:228184	skos:exactMatch
-GARD:20574	skos:exactMatch			Orphanet:228215	
 GARD:20575	skos:exactMatch	MONDO:0016434	acquired dermis elastic tissue disorder	Orphanet:228218	skos:exactMatch
 GARD:20576	skos:exactMatch	MONDO:0016435	obsolete acquired dermis elastic tissue disorder with decreased elastic tissue	Orphanet:228221	skos:exactMatch
 GARD:20577	skos:exactMatch	MONDO:0016436	obsolete acquired dermis elastic tissue disorder with increased elastic tissue	Orphanet:228224	skos:exactMatch
@@ -7072,7 +7028,6 @@ GARD:20594	skos:exactMatch	MONDO:0016460	polyvalvular heart disease syndrome	Orp
 GARD:20595	skos:exactMatch	MONDO:0016461	5q35 microduplication syndrome	Orphanet:228415	skos:exactMatch
 GARD:20596	skos:exactMatch	MONDO:0016463	syndromic agammaglobulinemia	Orphanet:229720	skos:exactMatch
 GARD:20597	skos:exactMatch	MONDO:0016468	toxin-mediated infectious botulism	Orphanet:230800	skos:exactMatch
-GARD:20598	skos:exactMatch			Orphanet:231080	
 GARD:20599	skos:exactMatch	MONDO:0016474	drug-induced lupus erythematosus	Orphanet:231111	skos:exactMatch
 GARD:206	skos:exactMatch	MONDO:0019005	nephronophthisis	Orphanet:655	skos:exactMatch
 GARD:2060	skos:exactMatch	MONDO:0009152	ectopia lentis 2, isolated, autosomal recessive	OMIM:225100	skos:exactMatch
@@ -7113,7 +7068,6 @@ GARD:20633	skos:exactMatch	MONDO:0016537	lymphoproliferative syndrome	Orphanet:2
 GARD:20634	skos:exactMatch	MONDO:0011669	hypotonia-cystinuria syndrome	Orphanet:238517	skos:exactMatch
 GARD:20635	skos:exactMatch	MONDO:0016540	congenital secondary polycythemia	Orphanet:238536	skos:exactMatch
 GARD:20636	skos:exactMatch	MONDO:0016541	acquired secondary polycythemia	Orphanet:238547	skos:exactMatch
-GARD:20637	skos:exactMatch			Orphanet:238621	
 GARD:20638	skos:exactMatch	MONDO:0016548	megacystis-megaureter syndrome	Orphanet:238637	skos:exactMatch
 GARD:20639	skos:exactMatch	MONDO:0016549	primary megaureter, adult-onset form	Orphanet:238642	skos:exactMatch
 GARD:20640	skos:exactMatch	MONDO:0016550	congenital primary megaureter, obstructed form	Orphanet:238646	skos:exactMatch
@@ -7127,7 +7081,6 @@ GARD:20647	skos:exactMatch	MONDO:0016562	progressive supranuclear palsy-pure aki
 GARD:20648	skos:exactMatch	MONDO:0016563	progressive supranuclear palsy-corticobasal syndrome	Orphanet:240103	skos:exactMatch
 GARD:20649	skos:exactMatch	MONDO:0016564	progressive supranuclear palsy-progressive non-fluent aphasia syndrome	Orphanet:240112	skos:exactMatch
 GARD:20650	skos:exactMatch	MONDO:0016565	syndromic genetic obesity	Orphanet:240371	skos:exactMatch
-GARD:20651	skos:exactMatch			Orphanet:244275	
 GARD:20652	skos:exactMatch	MONDO:0016577	biliary atresia with splenic malformation syndrome	Orphanet:244283	skos:exactMatch
 GARD:20653	skos:exactMatch	MONDO:0016588	infantile mercury poisoning	Orphanet:247165	skos:exactMatch
 GARD:20654	skos:exactMatch	MONDO:0016591	sporadic adult-onset ataxia of unknown etiology	Orphanet:247234	skos:exactMatch
@@ -7228,7 +7181,6 @@ GARD:20744	skos:exactMatch	MONDO:0016767	obsolete cutaneous lichen planus	Orphan
 GARD:20745	skos:exactMatch	MONDO:0016768	obsolete rare mucosal lichen planus	Orphanet:254373	skos:exactMatch
 GARD:20746	skos:exactMatch	MONDO:0016777	inhalational botulism	Orphanet:254504	skos:exactMatch
 GARD:20747	skos:exactMatch	MONDO:0016778	iatrogenic botulism	Orphanet:254509	skos:exactMatch
-GARD:20748	skos:exactMatch			Orphanet:254685	
 GARD:20749	skos:exactMatch	MONDO:0016786	partial hydatidiform mole	Orphanet:254693	skos:exactMatch
 GARD:20750	skos:exactMatch	MONDO:0016787	epithelioid trophoblastic tumor	Orphanet:254698	skos:exactMatch
 GARD:20751	skos:exactMatch	MONDO:0016788	obsolete genetic hyperferritinemia without iron overload	Orphanet:254704	skos:exactMatch
@@ -7386,7 +7338,6 @@ GARD:20894	skos:exactMatch	MONDO:0016975	thymoma type AB	Orphanet:263324	skos:ex
 GARD:20895	skos:exactMatch	MONDO:0016976	well-differentiated thymic neuroendocrine carcinoma	Orphanet:263331	skos:exactMatch
 GARD:20896	skos:exactMatch	MONDO:0016977	moderately-differentiated thymic neuroendocrine carcinoma	Orphanet:263335	skos:exactMatch
 GARD:20897	skos:exactMatch	MONDO:0016978	poorly differentiated thymic neuroendocrine carcinoma	Orphanet:263339	skos:exactMatch
-GARD:20898	skos:exactMatch			Orphanet:263352	
 GARD:20899	skos:exactMatch	MONDO:0016981	infantile spams-psychomotor retardation-progressive brain atrophy-basal ganglia disease syndrome	Orphanet:263410	skos:exactMatch
 GARD:20900	skos:exactMatch	MONDO:0016982	angiosarcoma	Orphanet:263413	skos:exactMatch
 GARD:20901	skos:exactMatch	MONDO:0016984	nevus of Ota	Orphanet:263425	skos:exactMatch
@@ -7437,7 +7388,6 @@ GARD:20944	skos:exactMatch	MONDO:0028569	obsolete genetic interstitial lung dise
 GARD:20945	skos:exactMatch	MONDO:0017050	intraocular medulloepithelioma	Orphanet:268139	skos:exactMatch
 GARD:20946	skos:exactMatch	MONDO:0017055	mycophenolate mofetil embryopathy	Orphanet:268249	skos:exactMatch
 GARD:20947	skos:exactMatch	MONDO:0017056	DYRK1A-related intellectual disability syndrome due to 21q22.13q22.2 microdeletion	Orphanet:268261	skos:exactMatch
-GARD:20948	skos:exactMatch			Orphanet:268316	
 GARD:20949	skos:exactMatch	MONDO:0017060	open iniencephaly	Orphanet:268363	skos:exactMatch
 GARD:20950	skos:exactMatch	MONDO:0017061	closed iniencephaly	Orphanet:268366	skos:exactMatch
 GARD:20951	skos:exactMatch	MONDO:0017062	spina bifida aperta	Orphanet:268369	skos:exactMatch
@@ -7494,13 +7444,6 @@ GARD:20999	skos:exactMatch	MONDO:0017118	obsolete syndrome with a cerebellar mal
 GARD:21000	skos:exactMatch	MONDO:0017119	obsolete syndrome with microcephaly as major feature	Orphanet:269528	skos:exactMatch
 GARD:21001	skos:exactMatch	MONDO:0017120	obsolete other syndrome with a central nervous system malformation as major feature	Orphanet:269531	skos:exactMatch
 GARD:21002	skos:exactMatch	MONDO:0017121	obsolete syndrome with a Dandy-Walker malformation as major feature	Orphanet:269546	skos:exactMatch
-GARD:21003	skos:exactMatch			Orphanet:269550	
-GARD:21004	skos:exactMatch			Orphanet:269553	
-GARD:21005	skos:exactMatch			Orphanet:269557	
-GARD:21006	skos:exactMatch			Orphanet:269560	
-GARD:21007	skos:exactMatch			Orphanet:269564	
-GARD:21008	skos:exactMatch			Orphanet:269567	
-GARD:21009	skos:exactMatch			Orphanet:269570	
 GARD:21010	skos:exactMatch	MONDO:0017122	obsolete genetic syndrome with corpus callosum agenesis/dysgenesis as a major feature	Orphanet:269573	skos:exactMatch
 GARD:21011	skos:exactMatch	MONDO:0017127	inherited soft tissue tumor	Orphanet:271832	skos:exactMatch
 GARD:21012	skos:exactMatch	MONDO:0017128	inherited digestive tract tumor	Orphanet:271835	skos:exactMatch
@@ -7575,8 +7518,6 @@ GARD:21078	skos:exactMatch	MONDO:0017229	distal monosomy 12p	Orphanet:280325	sko
 GARD:21079	skos:exactMatch	MONDO:0029014	obsolete rare systemic or rheumatological disease of childhood	Orphanet:280342	skos:exactMatch
 GARD:2108	skos:exactMatch	MONDO:0013074	encephalocraniocutaneous lipomatosis	Orphanet:2396	skos:exactMatch
 GARD:21080	skos:exactMatch	MONDO:0017230	autosomal semi-dominant severe lipodystrophic laminopathy	Orphanet:280365	skos:exactMatch
-GARD:21081	skos:exactMatch			Orphanet:280369	
-GARD:21082	skos:exactMatch			Orphanet:280373	
 GARD:21083	skos:exactMatch	MONDO:0017232	recessive intellectual disability-motor dysfunction-multiple joint contractures syndrome	Orphanet:280384	skos:exactMatch
 GARD:21084	skos:exactMatch	MONDO:0017233	familial Alzheimer-like prion disease	Orphanet:280397	skos:exactMatch
 GARD:21085	skos:exactMatch	MONDO:0017234	inherited prion disease	Orphanet:280400	skos:exactMatch
@@ -7648,7 +7589,6 @@ GARD:21149	skos:exactMatch	MONDO:0017345	Epstein-Barr virus-associated mesenchym
 GARD:21150	skos:exactMatch	MONDO:0017346	Epstein-Barr virus-positive diffuse large B-cell lymphoma of the elderly	Orphanet:289661	skos:exactMatch
 GARD:21151	skos:exactMatch	MONDO:0017348	lymphoepithelial-like carcinoma	Orphanet:289682	skos:exactMatch
 GARD:21152	skos:exactMatch	MONDO:0017349	myopericytoma	Orphanet:289685	skos:exactMatch
-GARD:21153	skos:exactMatch			Orphanet:289825	
 GARD:21154	skos:exactMatch	MONDO:0017350	inborn disorder of tryptophan metabolism	Orphanet:289829	skos:exactMatch
 GARD:21155	skos:exactMatch	MONDO:0017351	inborn disorder of lysine and hydroxylysine metabolism	Orphanet:289832	skos:exactMatch
 GARD:21156	skos:exactMatch	MONDO:0017352	disorder of glutamine metabolism	Orphanet:289841	skos:exactMatch
@@ -7757,7 +7697,6 @@ GARD:21255	skos:exactMatch	MONDO:0017628	myospherulosis	Orphanet:306553	skos:exa
 GARD:21256	skos:exactMatch	MONDO:0017631	obsolete rare tumor of gallbladder and extrahepatic biliary tract	Orphanet:306633	skos:exactMatch
 GARD:21257	skos:exactMatch	MONDO:0017632	obsolete rare tumor of liver and intrahepatic biliary tract	Orphanet:306636	skos:exactMatch
 GARD:21258	skos:exactMatch	MONDO:0017633	obsolete rare intoxication due to medical products	Orphanet:306640	skos:exactMatch
-GARD:21259	skos:exactMatch			Orphanet:306644	
 GARD:21260	skos:exactMatch	MONDO:0017634	non-infectious anterior uveitis	Orphanet:306648	skos:exactMatch
 GARD:21261	skos:exactMatch	MONDO:0017635	obsolete parkinsonian syndrome due to neurodegenerative disease	Orphanet:306666	skos:exactMatch
 GARD:21262	skos:exactMatch	MONDO:0017636	hemiparkinsonism-hemiatrophy syndrome	Orphanet:306669	skos:exactMatch
@@ -7930,7 +7869,6 @@ GARD:21423	skos:exactMatch	MONDO:0017898	obsolete autosomal recessive mendelian 
 GARD:21424	skos:exactMatch	MONDO:0017899	obsolete autosomal dominant mendelian susceptibility to mycobacterial diseases due to a partial deficiency	Orphanet:319543	skos:exactMatch
 GARD:21425	skos:exactMatch	MONDO:0017903	autosomal dominant mendelian susceptibility to mycobacterial diseases due to partial IFNgammaR2 deficiency	Orphanet:319589	skos:exactMatch
 GARD:21426	skos:exactMatch	MONDO:0017907	primary lymphoma of the conjunctiva	Orphanet:319667	skos:exactMatch
-GARD:21427	skos:exactMatch			Orphanet:319719	
 GARD:21428	skos:exactMatch	MONDO:0017912	X-linked pure spastic paraplegia	Orphanet:320332	skos:exactMatch
 GARD:21429	skos:exactMatch	MONDO:0017913	pure or complex hereditary spastic paraplegia	Orphanet:320335	skos:exactMatch
 GARD:2143	skos:exactMatch	MONDO:0019308	junctional epidermolysis bullosa inversa	Orphanet:79405	skos:exactMatch
@@ -7962,12 +7900,7 @@ GARD:21454	skos:exactMatch	MONDO:0017954	pyogenic autoinflammatory syndrome	Orph
 GARD:21455	skos:exactMatch	MONDO:0017955	granulomatous autoinflammatory syndrome	Orphanet:324930	skos:exactMatch
 GARD:21456	skos:exactMatch	MONDO:0017956	obsolete mixed autoinflammatory and autoimmune syndrome	Orphanet:324933	skos:exactMatch
 GARD:21457	skos:exactMatch	MONDO:0017957	obsolete unclassified autoinflammatory syndrome	Orphanet:324936	skos:exactMatch
-GARD:21458	skos:exactMatch			Orphanet:324939	
-GARD:21459	skos:exactMatch			Orphanet:324942	
 GARD:2146	skos:exactMatch	MONDO:0007551	epidermolysis bullosa simplex 1C, localized	Orphanet:79400	skos:exactMatch
-GARD:21460	skos:exactMatch			Orphanet:324950	
-GARD:21461	skos:exactMatch			Orphanet:324953	
-GARD:21462	skos:exactMatch			Orphanet:324960	
 GARD:21463	skos:exactMatch	MONDO:0017961	46,XX disorder of gonadal development	Orphanet:325055	skos:exactMatch
 GARD:21464	skos:exactMatch	MONDO:0017962	46,XX disorder of sex development induced by fetoplacental androgens excess	Orphanet:325061	skos:exactMatch
 GARD:21465	skos:exactMatch	MONDO:0017963	46,XX disorder of sex development induced by endogenous maternal-derived androgen	Orphanet:325093	skos:exactMatch
@@ -7989,9 +7922,6 @@ GARD:21479	skos:exactMatch	MONDO:0017978	obsolete syndrome with disorder of sex 
 GARD:2148	skos:exactMatch	MONDO:0007555	pidermolysis bullosa simplex 5A, Ogna type	Orphanet:79401	skos:exactMatch
 GARD:21480	skos:exactMatch	MONDO:0031004	obsolete genetic disorder of sex development of gynecological interest	Orphanet:325665	skos:exactMatch
 GARD:21481	skos:exactMatch	MONDO:0031016	obsolete genetic disorder of sex development	Orphanet:325690	skos:exactMatch
-GARD:21482	skos:exactMatch			Orphanet:325697	
-GARD:21483	skos:exactMatch			Orphanet:325706	
-GARD:21484	skos:exactMatch			Orphanet:325713	
 GARD:21485	skos:exactMatch	MONDO:0017993	cerebral sinovenous thrombosis	Orphanet:329217	skos:exactMatch
 GARD:21486	skos:exactMatch	MONDO:0017994	severe early-onset obesity-insulin resistance syndrome due to SH2B1 deficiency	Orphanet:329249	skos:exactMatch
 GARD:21487	skos:exactMatch	MONDO:0018000	hereditary thrombocytosis with transverse limb defect	Orphanet:329319	skos:exactMatch
@@ -8051,7 +7981,6 @@ GARD:21536	skos:exactMatch	MONDO:0018165	venous thoracic outlet syndrome	Orphane
 GARD:21537	skos:exactMatch	MONDO:0018167	primary essential cutis verticis gyrata	Orphanet:357220	skos:exactMatch
 GARD:21538	skos:exactMatch	MONDO:0018168	primary non-essential cutis verticis gyrata	Orphanet:357225	skos:exactMatch
 GARD:21539	skos:exactMatch	MONDO:0018170	idiopathic nephrotic syndrome	Orphanet:357502	skos:exactMatch
-GARD:21540	skos:exactMatch			Orphanet:357506	
 GARD:21541	skos:exactMatch	MONDO:0018185	congenital anomaly of the great veins	Orphanet:363189	skos:exactMatch
 GARD:21542	skos:exactMatch	MONDO:0018186	obsolete ring chromosome	Orphanet:363203	skos:exactMatch
 GARD:21543	skos:exactMatch	MONDO:0031689	obsolete genetic progeroid syndrome	Orphanet:363245	skos:exactMatch
@@ -8141,7 +8070,6 @@ GARD:21623	skos:exactMatch	MONDO:0018324	adult-onset myasthenia gravis	Orphanet:
 GARD:21624	skos:exactMatch	MONDO:0018325	juvenile myasthenia gravis	Orphanet:391497	skos:exactMatch
 GARD:21625	skos:exactMatch	MONDO:0018326	transient neonatal myasthenia gravis	Orphanet:391504	skos:exactMatch
 GARD:21626	skos:exactMatch	MONDO:0018327	glomus tumor	Orphanet:391651	skos:exactMatch
-GARD:21627	skos:exactMatch			Orphanet:391655	
 GARD:21628	skos:exactMatch	MONDO:0018329	persistent combined dystonia	Orphanet:391711	skos:exactMatch
 GARD:21629	skos:exactMatch	MONDO:0018330	mucinous adenocarcinoma of the appendix	Orphanet:391723	skos:exactMatch
 GARD:21630	skos:exactMatch	MONDO:0044807	inherited dystonia	Orphanet:391799	skos:exactMatch
@@ -8246,8 +8174,6 @@ GARD:21723	skos:exactMatch	MONDO:0018450	spinal muscular atrophy with respirator
 GARD:21724	skos:exactMatch	MONDO:0018451	X-linked distal hereditary motor neuropathy	Orphanet:404538	skos:exactMatch
 GARD:21725	skos:exactMatch	MONDO:0018454	dysostosis of genetic origin	Orphanet:404568	skos:exactMatch
 GARD:21726	skos:exactMatch	MONDO:0018455	obsolete dysostosis of genetic origin with limb anomaly as a major feature	Orphanet:404571	skos:exactMatch
-GARD:21727	skos:exactMatch			Orphanet:404574	
-GARD:21728	skos:exactMatch			Orphanet:404577	
 GARD:21729	skos:exactMatch	MONDO:0018456	polyarticular juvenile idiopathic arthritis	Orphanet:404580	skos:exactMatch
 GARD:2173	skos:exactMatch	MONDO:0017704	familial partial epilepsy	Orphanet:309	skos:exactMatch
 GARD:21730	skos:exactMatch	MONDO:0018457	obsolete rare genetic bone development disorder	Orphanet:404584	skos:exactMatch
@@ -8401,7 +8327,6 @@ GARD:21874	skos:exactMatch	MONDO:0018654	idiopathic dropped head syndrome	Orphan
 GARD:21875	skos:exactMatch	MONDO:0018658	19p13.3 microduplication syndrome	Orphanet:447980	skos:exactMatch
 GARD:21876	skos:exactMatch	MONDO:0018659	partial duplication of the short arm of chromosome 19	Orphanet:447985	skos:exactMatch
 GARD:21877	skos:exactMatch	MONDO:0018664	ectopia cordis	Orphanet:448270	skos:exactMatch
-GARD:21878	skos:exactMatch			Orphanet:448426	
 GARD:21879	skos:exactMatch	MONDO:0018667	pleural empyema	Orphanet:449266	skos:exactMatch
 GARD:2188	skos:exactMatch	MONDO:0016379	erosive pustular dermatosis of the scalp	Orphanet:222	skos:exactMatch
 GARD:21880	skos:exactMatch	MONDO:0018668	scedosporiosis	Orphanet:449280	skos:exactMatch
@@ -8515,7 +8440,6 @@ GARD:21982	skos:exactMatch	MONDO:0018815	aneurysmal bone cyst	Orphanet:480553	sk
 GARD:21983	skos:exactMatch	MONDO:0018816	isolated neonatal sclerosing cholangitis	Orphanet:480556	skos:exactMatch
 GARD:21984	skos:exactMatch	MONDO:0018818	facial diplegia with paresthesias	Orphanet:480701	skos:exactMatch
 GARD:21985	skos:exactMatch	MONDO:0028618	gastroenteric neuroendocrine neoplasm	Orphanet:481508	skos:exactMatch
-GARD:21986	skos:exactMatch			Orphanet:481671	
 GARD:21987	skos:exactMatch	MONDO:0021034	genetic alopecia	Orphanet:481771	skos:exactMatch
 GARD:21988	skos:exactMatch	MONDO:0018831	HTRA1-related cerebral small vessel disease	Orphanet:482072	skos:exactMatch
 GARD:21989	skos:exactMatch	MONDO:0018833	obsolete rare idiopathic macular telangiectasia	Orphanet:482092	skos:exactMatch
@@ -8526,7 +8450,6 @@ GARD:21993	skos:exactMatch	MONDO:0044621	16p12.1p12.3 triplication syndrome	Orph
 GARD:21994	skos:exactMatch	MONDO:0044622	EMILIN-1-related connective tissue disease	Orphanet:485418	skos:exactMatch
 GARD:21995	skos:exactMatch	MONDO:0018840	isolated congenital hepatic fibrosis	Orphanet:485426	skos:exactMatch
 GARD:21996	skos:exactMatch	MONDO:0018841	congenital bile acid synthesis defect	Orphanet:485631	skos:exactMatch
-GARD:21997	skos:exactMatch			Orphanet:486955	
 GARD:21998	skos:exactMatch	MONDO:0044624	pediatric collagenous gastritis	Orphanet:487809	skos:exactMatch
 GARD:21999	skos:exactMatch	MONDO:0044625	autosomal dominant charcot-marie-tooth disease type 2 due to DGAT2 mutation	Orphanet:487814	skos:exactMatch
 GARD:22	skos:exactMatch	MONDO:0009872	Bjornstad syndrome	Orphanet:123	skos:exactMatch
@@ -8585,7 +8508,6 @@ GARD:22048	skos:exactMatch	MONDO:0044717	4q25 proximal deletion syndrome	Orphane
 GARD:22049	skos:exactMatch	MONDO:0044719	erythema multiforme major	Orphanet:502499	skos:exactMatch
 GARD:2205	skos:exactMatch	MONDO:0007586	exostoses, multiple, type 2	OMIM:133701	skos:exactMatch
 GARD:22050	skos:exactMatch	MONDO:0044723	3-methylglutaconic aciduria type 8	Orphanet:505208	skos:exactMatch
-GARD:22051	skos:exactMatch			Orphanet:505395	
 GARD:22052	skos:exactMatch	MONDO:0005815	pancreatic neuroendocrine neoplasm	Orphanet:506052	skos:exactMatch
 GARD:22053	skos:exactMatch	MONDO:0023206	functional pancreatic neuroendocrine tumor	Orphanet:506060	skos:exactMatch
 GARD:22054	skos:exactMatch	MONDO:0004334	non-functional pancreatic neuroendocrine tumor	Orphanet:506075	skos:exactMatch
@@ -8593,14 +8515,7 @@ GARD:22055	skos:exactMatch	MONDO:0024504	enterochromaffin cell serotonin-produci
 GARD:22056	skos:exactMatch	MONDO:0005893	pancreatic endocrine carcinoma	Orphanet:506098	skos:exactMatch
 GARD:22057	skos:exactMatch	MONDO:0044727	pancreatic carcinoma with mixed differentiation	Orphanet:506112	skos:exactMatch
 GARD:22058	skos:exactMatch	MONDO:0003649	esophageal neuroendocrine tumor	Orphanet:506136	skos:exactMatch
-GARD:22059	skos:exactMatch			Orphanet:506207	
 GARD:2206	skos:exactMatch	MONDO:0010846	exostoses, multiple, type III	OMIM:600209	skos:exactMatch
-GARD:22060	skos:exactMatch			Orphanet:506210	
-GARD:22061	skos:exactMatch			Orphanet:506213	
-GARD:22062	skos:exactMatch			Orphanet:506216	
-GARD:22063	skos:exactMatch			Orphanet:506219	
-GARD:22064	skos:exactMatch			Orphanet:506222	
-GARD:22065	skos:exactMatch			Orphanet:506225	
 GARD:22066	skos:exactMatch	MONDO:0044739	Stevens-Johnson syndrome/toxic epidermal necrolysis overlap syndrome	Orphanet:506784	skos:exactMatch
 GARD:22067	skos:exactMatch	MONDO:0034819	obsolete familial intestinal malrotation	Orphanet:508410	skos:exactMatch
 GARD:22068	skos:exactMatch	MONDO:0034820	cleft lip and palate-craniofacial dysmorphism-congenital heart defect-hearing loss syndrome	Orphanet:508476	skos:exactMatch
@@ -8615,50 +8530,22 @@ GARD:22075	skos:exactMatch	MONDO:0033717	congenital cerebellar ataxia due to RNU
 GARD:22076	skos:exactMatch	MONDO:0034895	congenital brachyesophagus-intrathoracic stomach-vertebral anomalies syndrome	Orphanet:514352	skos:exactMatch
 GARD:22077	skos:exactMatch	MONDO:0034901	ATP13A2-related parkinsonism	Orphanet:514980	skos:exactMatch
 GARD:22078	skos:exactMatch	MONDO:0034923	obsolete inflammatory/autoimmune disorder involving the lacrimal system	Orphanet:519264	skos:exactMatch
-GARD:22079	skos:exactMatch			Orphanet:519266	
-GARD:22080	skos:exactMatch			Orphanet:519268	
 GARD:22081	skos:exactMatch	MONDO:0034926	obsolete rare disorder with entropion	Orphanet:519270	skos:exactMatch
-GARD:22082	skos:exactMatch			Orphanet:519272	
 GARD:22083	skos:exactMatch	MONDO:0850007	syndromic lacrimal system disorder	Orphanet:519274	skos:exactMatch
 GARD:22084	skos:exactMatch	MONDO:0850008	anterior segment developmental abnormality with extraocular manifestations	Orphanet:519276	skos:exactMatch
 GARD:22085	skos:exactMatch	MONDO:0023865	corneal infection	Orphanet:519278	skos:exactMatch
 GARD:22086	skos:exactMatch	MONDO:0034931	obsolete rare conjunctivitis	Orphanet:519280	skos:exactMatch
-GARD:22087	skos:exactMatch			Orphanet:519282	
-GARD:22088	skos:exactMatch			Orphanet:519284	
-GARD:22089	skos:exactMatch			Orphanet:519286	
-GARD:22090	skos:exactMatch			Orphanet:519288	
-GARD:22091	skos:exactMatch			Orphanet:519290	
 GARD:22092	skos:exactMatch	MONDO:0034937	obsolete syndromic ectopia lentis	Orphanet:519292	skos:exactMatch
 GARD:22093	skos:exactMatch	MONDO:0850009	syndromic microspherophakia	Orphanet:519294	skos:exactMatch
-GARD:22094	skos:exactMatch			Orphanet:519296	
-GARD:22095	skos:exactMatch			Orphanet:519298	
-GARD:22096	skos:exactMatch			Orphanet:519300	
-GARD:22097	skos:exactMatch			Orphanet:519302	
 GARD:22098	skos:exactMatch	MONDO:0034943	obsolete isolated vitreoretinopathy	Orphanet:519304	skos:exactMatch
-GARD:22099	skos:exactMatch			Orphanet:519306	
 GARD:221	skos:exactMatch	MONDO:0005021	dilated cardiomyopathy	Orphanet:217604	skos:exactMatch
-GARD:22100	skos:exactMatch			Orphanet:519309	
-GARD:22101	skos:exactMatch			Orphanet:519311	
-GARD:22102	skos:exactMatch			Orphanet:519313	
-GARD:22103	skos:exactMatch			Orphanet:519315	
-GARD:22104	skos:exactMatch			Orphanet:519317	
-GARD:22105	skos:exactMatch			Orphanet:519319	
-GARD:22106	skos:exactMatch			Orphanet:519321	
-GARD:22107	skos:exactMatch			Orphanet:519323	
 GARD:22108	skos:exactMatch	MONDO:0034953	obsolete syndromic inherited retinal disorder	Orphanet:519325	skos:exactMatch
 GARD:22109	skos:exactMatch	MONDO:0034954	syndromic vitreoretinopathy	Orphanet:519327	skos:exactMatch
-GARD:22110	skos:exactMatch			Orphanet:519329	
-GARD:22111	skos:exactMatch			Orphanet:519331	
 GARD:22112	skos:exactMatch	MONDO:0850010	congenital optic disc excavation	Orphanet:519333	skos:exactMatch
-GARD:22113	skos:exactMatch			Orphanet:519337	
 GARD:22114	skos:exactMatch	MONDO:0008331	obsolete pseudopapilledema	Orphanet:519339	skos:exactMatch
 GARD:22115	skos:exactMatch	MONDO:0034961	obsolete rare brainstem or cerebellar disorder with ophthalmic involvement as a major feature	Orphanet:519341	skos:exactMatch
 GARD:22116	skos:exactMatch	MONDO:0034962	obsolete rare ophthalmic disorder with cortical involvement	Orphanet:519343	skos:exactMatch
-GARD:22117	skos:exactMatch			Orphanet:519345	
-GARD:22118	skos:exactMatch			Orphanet:519347	
 GARD:22119	skos:exactMatch	MONDO:0034965	obsolete rare ophthalmic disorder with cranial nerve involvement	Orphanet:519349	skos:exactMatch
-GARD:22120	skos:exactMatch			Orphanet:519351	
-GARD:22121	skos:exactMatch			Orphanet:519353	
 GARD:22122	skos:exactMatch	MONDO:0034968	obsolete rare ocular motility/alignment disorder	Orphanet:519355	skos:exactMatch
 GARD:22123	skos:exactMatch	MONDO:0034971	isolated congenital entropion	Orphanet:519386	skos:exactMatch
 GARD:22124	skos:exactMatch	MONDO:0033809	isolated blepharochalasis	Orphanet:519390	skos:exactMatch
@@ -8686,49 +8573,9 @@ GARD:22144	skos:exactMatch	MONDO:0033853	congenital cataract-severe neonatal hep
 GARD:22145	skos:exactMatch	MONDO:0035027	microcephaly-facial dysmorphism-ocular anomalies-multiple congenital anomalies syndrome	Orphanet:521445	skos:exactMatch
 GARD:22146	skos:exactMatch	MONDO:0033856	LAMA5-related multisystemic syndrome	Orphanet:521450	skos:exactMatch
 GARD:22147	skos:exactMatch	MONDO:0033862	primary autoimmune enteropathy	Orphanet:522037	skos:exactMatch
-GARD:22148	skos:exactMatch			Orphanet:522043	
 GARD:22149	skos:exactMatch	MONDO:0035037	obsolete rare genetic disorder of the visual organs	Orphanet:522504	skos:exactMatch
-GARD:22150	skos:exactMatch			Orphanet:522506	
-GARD:22151	skos:exactMatch			Orphanet:522508	
-GARD:22152	skos:exactMatch			Orphanet:522510	
-GARD:22153	skos:exactMatch			Orphanet:522512	
-GARD:22154	skos:exactMatch			Orphanet:522514	
-GARD:22155	skos:exactMatch			Orphanet:522516	
-GARD:22156	skos:exactMatch			Orphanet:522518	
-GARD:22157	skos:exactMatch			Orphanet:522520	
-GARD:22158	skos:exactMatch			Orphanet:522522	
-GARD:22159	skos:exactMatch			Orphanet:522524	
 GARD:2216	skos:exactMatch	MONDO:0009200	eyebrow duplication-syndactyly syndrome	Orphanet:3172	skos:exactMatch
-GARD:22160	skos:exactMatch			Orphanet:522526	
-GARD:22161	skos:exactMatch			Orphanet:522528	
-GARD:22162	skos:exactMatch			Orphanet:522530	
-GARD:22163	skos:exactMatch			Orphanet:522532	
-GARD:22164	skos:exactMatch			Orphanet:522534	
-GARD:22165	skos:exactMatch			Orphanet:522536	
-GARD:22166	skos:exactMatch			Orphanet:522538	
-GARD:22167	skos:exactMatch			Orphanet:522540	
-GARD:22168	skos:exactMatch			Orphanet:522542	
-GARD:22169	skos:exactMatch			Orphanet:522546	
-GARD:22170	skos:exactMatch			Orphanet:522548	
-GARD:22171	skos:exactMatch			Orphanet:522550	
-GARD:22172	skos:exactMatch			Orphanet:522552	
-GARD:22173	skos:exactMatch			Orphanet:522554	
-GARD:22174	skos:exactMatch			Orphanet:522556	
-GARD:22175	skos:exactMatch			Orphanet:522558	
-GARD:22176	skos:exactMatch			Orphanet:522560	
-GARD:22177	skos:exactMatch			Orphanet:522562	
-GARD:22178	skos:exactMatch			Orphanet:522564	
-GARD:22179	skos:exactMatch			Orphanet:522566	
-GARD:22180	skos:exactMatch			Orphanet:522568	
-GARD:22181	skos:exactMatch			Orphanet:522570	
-GARD:22182	skos:exactMatch			Orphanet:522572	
-GARD:22183	skos:exactMatch			Orphanet:522574	
-GARD:22184	skos:exactMatch			Orphanet:522576	
-GARD:22185	skos:exactMatch			Orphanet:522578	
 GARD:22186	skos:exactMatch	MONDO:0035075	secondary early-onset glaucoma of genetic origin	Orphanet:522580	skos:exactMatch
-GARD:22187	skos:exactMatch			Orphanet:522584	
-GARD:22188	skos:exactMatch			Orphanet:523000	
-GARD:22189	skos:exactMatch			Orphanet:525677	
 GARD:22190	skos:exactMatch	MONDO:0033925	pediatric-onset Graves disease	Orphanet:525731	skos:exactMatch
 GARD:22191	skos:exactMatch	MONDO:0033926	prepubertal anorexia nervosa	Orphanet:525738	skos:exactMatch
 GARD:22192	skos:exactMatch	MONDO:0054865	encephalopathy due to mitochondrial and peroxisomal fission defect	Orphanet:527276	skos:exactMatch
@@ -8759,7 +8606,6 @@ GARD:22215	skos:exactMatch	MONDO:0034022	Bethlem myopathy 2	Orphanet:536516	skos
 GARD:22216	skos:exactMatch	MONDO:0016002	Ehlers-Danlos syndrome, kyphoscoliotic type 1	Orphanet:1900	skos:exactMatch
 GARD:22217	skos:exactMatch	MONDO:0035220	PLG-related hereditary angioedema with normal C1inh	Orphanet:537072	skos:exactMatch
 GARD:22218	skos:exactMatch	MONDO:0034041	congenital axonal neuropathy with encephalopathy	Orphanet:538101	skos:exactMatch
-GARD:22219	skos:exactMatch			Orphanet:538238	
 GARD:2222	skos:exactMatch	MONDO:0009074	facial dysmorphism-macrocephaly-myopia-Dandy-Walker malformation syndrome	Orphanet:1970	skos:exactMatch
 GARD:22220	skos:exactMatch	MONDO:0035235	classic pyoderma gangrenosum	Orphanet:538863	skos:exactMatch
 GARD:22221	skos:exactMatch	MONDO:0035236	pustular pyoderma gangrenosum	Orphanet:538866	skos:exactMatch
@@ -8769,7 +8615,6 @@ GARD:22224	skos:exactMatch	MONDO:0035249	obsolete anomalous aortic origin of the
 GARD:22225	skos:exactMatch	MONDO:0035250	obsolete anomalous aortic origin of the right coronary artery	Orphanet:541454	skos:exactMatch
 GARD:22226	skos:exactMatch	MONDO:0035251	obsolete anomalous aortic origin of coronary artery	Orphanet:541478	skos:exactMatch
 GARD:22227	skos:exactMatch	MONDO:0035252	obsolete anomalous origin of coronary artery from the pulmonary artery	Orphanet:541507	skos:exactMatch
-GARD:22228	skos:exactMatch			Orphanet:542323	
 GARD:22229	skos:exactMatch	MONDO:0035267	obsolete quadricuspid aortic valve	Orphanet:542568	skos:exactMatch
 GARD:22230	skos:exactMatch	MONDO:0035274	obsolete anomaly of the coronary ostia	Orphanet:542822	skos:exactMatch
 GARD:22231	skos:exactMatch	MONDO:0034092	optic atrophy-ataxia-peripheral neuropathy-global developmental delay syndrome	Orphanet:543470	skos:exactMatch
@@ -8778,7 +8623,6 @@ GARD:22233	skos:exactMatch	MONDO:0001549	hemolytic-uremic syndrome	Orphanet:5444
 GARD:22234	skos:exactMatch	MONDO:0034103	infection-related hemolytic uremic syndrome	Orphanet:544482	skos:exactMatch
 GARD:22235	skos:exactMatch	MONDO:0035293	streptococcus pneumoniae-associated hemolytic uremic syndrome	Orphanet:544493	skos:exactMatch
 GARD:22236	skos:exactMatch	MONDO:0035295	congenital primary megaureter, refluxing and obstructed form	Orphanet:544578	skos:exactMatch
-GARD:22237	skos:exactMatch			Orphanet:544590	
 GARD:22238	skos:exactMatch	MONDO:0034110	atypical Fanconi syndrome-neonatal hyperinsulinism syndrome	Orphanet:544628	skos:exactMatch
 GARD:22239	skos:exactMatch	MONDO:0035312	fibrohistiocytic inflammatory pseudotumor of the liver	Orphanet:555434	skos:exactMatch
 GARD:22240	skos:exactMatch	MONDO:0035313	lymphoplasmacytic inflammatory pseudotumor of the liver	Orphanet:555437	skos:exactMatch
@@ -8806,8 +8650,6 @@ GARD:22261	skos:exactMatch	MONDO:0035408	furuncular myiasis due to Cordylobia ro
 GARD:22262	skos:exactMatch	MONDO:0034204	syndromic congenital sodium diarrhea	Orphanet:563708	skos:exactMatch
 GARD:22263	skos:exactMatch	MONDO:0035410	isolated congenital aglossia	Orphanet:563951	skos:exactMatch
 GARD:22264	skos:exactMatch	MONDO:0035411	isolated congenital hypoglossia	Orphanet:563954	skos:exactMatch
-GARD:22265	skos:exactMatch			Orphanet:564127	
-GARD:22266	skos:exactMatch			Orphanet:564178	
 GARD:22267	skos:exactMatch	MONDO:0035423	triglyceride deposit cardiomyovasculopathy	Orphanet:565612	skos:exactMatch
 GARD:22268	skos:exactMatch	MONDO:0034846	primary desmosis coli	Orphanet:565641	skos:exactMatch
 GARD:22269	skos:exactMatch	MONDO:0034212	methotrexate toxicity	Orphanet:565782	skos:exactMatch
@@ -8832,10 +8674,6 @@ GARD:22287	skos:exactMatch	MONDO:0035459	idiopathic multidrug-resistant nephroti
 GARD:22288	skos:exactMatch	MONDO:0035460	idiopathic steroid-resistant nephrotic syndrome with sensitivity to second-line immunosuppressive therapy	Orphanet:567552	skos:exactMatch
 GARD:22289	skos:exactMatch	MONDO:0035461	obsolete systemic disease with glomerulopathy as a major feature	Orphanet:567554	skos:exactMatch
 GARD:2229	skos:exactMatch	MONDO:0009204	lethal faciocardiomelic dysplasia	Orphanet:1972	skos:exactMatch
-GARD:22290	skos:exactMatch			Orphanet:567556	
-GARD:22291	skos:exactMatch			Orphanet:567558	
-GARD:22292	skos:exactMatch			Orphanet:567560	
-GARD:22293	skos:exactMatch			Orphanet:567562	
 GARD:22294	skos:exactMatch	MONDO:0035466	obsolete nephrotic syndrome without extrarenal manifestations	Orphanet:567564	skos:exactMatch
 GARD:22295	skos:exactMatch	MONDO:0035777	parenteral nutrition-associated cholestasis	Orphanet:567983	skos:exactMatch
 GARD:22296	skos:exactMatch	MONDO:0035469	obsolete primary lymphedema without systemic or visceral involvement	Orphanet:568041	skos:exactMatch
@@ -8874,7 +8712,6 @@ GARD:22326	skos:exactMatch	MONDO:0100147	SATB2 associated disorder	Orphanet:5762
 GARD:22327	skos:exactMatch	MONDO:0035561	sporadic human prion disease	Orphanet:576356	skos:exactMatch
 GARD:22328	skos:exactMatch	MONDO:0035562	acquired human prion disease	Orphanet:576360	skos:exactMatch
 GARD:22329	skos:exactMatch	MONDO:0034976	iatrogenic Creutzfeldt-Jakob disease	Orphanet:576379	skos:exactMatch
-GARD:22330	skos:exactMatch			Orphanet:576742	
 GARD:22331	skos:exactMatch	MONDO:0034987	intraductal tubulopapillary neoplasm of pancreas	Orphanet:580572	skos:exactMatch
 GARD:22332	skos:exactMatch	MONDO:0035581	obsolete lethal brain and heart developmental defects	Orphanet:580933	skos:exactMatch
 GARD:22333	skos:exactMatch	MONDO:0035592	congenital infiltrating lipomatosis of the face	Orphanet:583097	skos:exactMatch
@@ -8985,29 +8822,22 @@ GARD:22434	skos:exactMatch	MONDO:0035821	isolated female hypospadias	Orphanet:60
 GARD:22435	skos:exactMatch	MONDO:0014890	PERCHING syndrome	Orphanet:603684	skos:exactMatch
 GARD:22436	skos:exactMatch	MONDO:0035823	KLHL7-related Bohring-Opitz-like syndrome	Orphanet:603689	skos:exactMatch
 GARD:22437	skos:exactMatch	MONDO:0035824	KLHL7-related cold-induced sweating-like syndrome	Orphanet:603694	skos:exactMatch
-GARD:22438	skos:exactMatch			Orphanet:603699	
 GARD:22439	skos:exactMatch	MONDO:0035826	symptomatic form of X-linked centronuclear myopathy in female carriers	Orphanet:604680	skos:exactMatch
 GARD:22440	skos:exactMatch	MONDO:0035862	obsolete rare syndromic intellectual disability without multiple congenital anomalies/dysmorphic syndrome	Orphanet:611314	skos:exactMatch
 GARD:22441	skos:exactMatch	MONDO:0035863	obsolete genetic multiple congenital anomalies/dysmorphic syndrome-intellectual disability	Orphanet:611327	skos:exactMatch
 GARD:22442	skos:exactMatch	MONDO:0035879	granuloma faciale	Orphanet:615943	skos:exactMatch
 GARD:22443	skos:exactMatch	MONDO:0035882	chronic intervillositis of unknown etiology	Orphanet:615970	skos:exactMatch
-GARD:22444	skos:exactMatch			Orphanet:616874	
 GARD:22445	skos:exactMatch	MONDO:0850013	twin anemia-polycythemia sequence	Orphanet:617294	skos:exactMatch
 GARD:22446	skos:exactMatch	MONDO:0850014	twin-reversed arterial perfusion sequence	Orphanet:617297	skos:exactMatch
 GARD:22447	skos:exactMatch	MONDO:0850015	selective intrauterine growth restriction	Orphanet:617301	skos:exactMatch
 GARD:22448	skos:exactMatch	MONDO:0850046	amniotic fluid embolism	Orphanet:617304	skos:exactMatch
-GARD:22449	skos:exactMatch			Orphanet:617307	
 GARD:2245	skos:exactMatch	MONDO:0008542	tetralogy of fallot	Orphanet:3303	skos:exactMatch
-GARD:22450	skos:exactMatch			Orphanet:617310	
-GARD:22451	skos:exactMatch			Orphanet:617313	
 GARD:22452	skos:exactMatch	MONDO:0850048	classic eosinophilic pustular folliculitis	Orphanet:617408	skos:exactMatch
 GARD:22453	skos:exactMatch	MONDO:0850050	congenital aphakia-iris hypoplasia-microphthalmia-microcornea syndrome	Orphanet:617449	skos:exactMatch
 GARD:22454	skos:exactMatch	MONDO:0850053	F12-associated cold autoinflammatory syndrome	Orphanet:617919	skos:exactMatch
 GARD:22455	skos:exactMatch	MONDO:0850054	hemophilia B leyden	Orphanet:617930	skos:exactMatch
 GARD:22456	skos:exactMatch	MONDO:0850058	chronic neurovisceral acid sphingomyelinase deficiency	Orphanet:618891	skos:exactMatch
-GARD:22457	skos:exactMatch			Orphanet:618899	
 GARD:22458	skos:exactMatch	MONDO:0850059	hereditary persistence of fetal hemoglobin-intellectual disability syndrome	Orphanet:619233	skos:exactMatch
-GARD:22459	skos:exactMatch			Orphanet:619249	
 GARD:22460	skos:exactMatch	MONDO:0021107	narcolepsy	Orphanet:619284	skos:exactMatch
 GARD:22461	skos:exactMatch	MONDO:0850064	inherited hematologic cancer-predisposing syndrome	Orphanet:619340	skos:exactMatch
 GARD:22462	skos:exactMatch	MONDO:0850065	neonatal-onset severe multisystemic autoinflammatory disease with increased IL18	Orphanet:619363	skos:exactMatch
@@ -9036,8 +8866,6 @@ GARD:22484	skos:exactMatch	MONDO:0850087	primary hypomagnesemia-generalized seiz
 GARD:22485	skos:exactMatch	MONDO:0850088	EGF-related primary hypomagnesemia with intellectual disability	Orphanet:620368	skos:exactMatch
 GARD:22486	skos:exactMatch	MONDO:0850089	Gitelman-like kidney tubulopathy due to mitochondrial DNA mutation	Orphanet:620371	skos:exactMatch
 GARD:22487	skos:exactMatch	MONDO:0850090	fibrosis-neurodegeneration-cerebral angiomatosis syndrome	Orphanet:621758	skos:exactMatch
-GARD:22488	skos:exactMatch			Orphanet:622720	
-GARD:22489	skos:exactMatch			Orphanet:622914	
 GARD:2249	skos:exactMatch	MONDO:0019625	familial thoracic aortic aneurysm and aortic dissection	Orphanet:91387	skos:exactMatch
 GARD:22490	skos:exactMatch	MONDO:0850095	X-linked severe syndromic thoracic aortic aneurysm and dissection	Orphanet:622925	skos:exactMatch
 GARD:22491	skos:exactMatch	MONDO:0850096	SBDS-related severe neonatal spondylometaphyseal dysplasia	Orphanet:622934	skos:exactMatch
@@ -11229,7 +11057,6 @@ GARD:7654	skos:exactMatch	MONDO:0010031	Sjogren-Larsson syndrome	Orphanet:816	sk
 GARD:7664	skos:exactMatch	MONDO:0008436	Sneddon syndrome	Orphanet:820	skos:exactMatch
 GARD:7672	skos:exactMatch	MONDO:0019255	sphingolipidosis	Orphanet:79225	skos:exactMatch
 GARD:7673	skos:exactMatch	MONDO:0019351	isolated spina bifida	Orphanet:823	skos:exactMatch
-GARD:7687	skos:exactMatch			Orphanet:253	
 GARD:7690	skos:exactMatch	MONDO:0007656	Gerstmann-Straussler-Scheinker syndrome	Orphanet:356	skos:exactMatch
 GARD:7692	skos:exactMatch	MONDO:0005968	sporotrichosis	Orphanet:826	skos:exactMatch
 GARD:7693	skos:exactMatch	MONDO:0008482	Sprengel deformity	Orphanet:3181	skos:exactMatch
@@ -11277,7 +11104,6 @@ GARD:7848	skos:exactMatch	MONDO:0008297	variegate porphyria	Orphanet:79473	skos:
 GARD:7851	skos:exactMatch	MONDO:0019509	cutaneous leukocytoclastic angiitis	Orphanet:889	skos:exactMatch
 GARD:7854	skos:exactMatch	MONDO:0019085	vernal keratoconjunctivitis	Orphanet:70476	skos:exactMatch
 GARD:7855	skos:exactMatch	MONDO:0008667	von Hippel-Lindau disease	Orphanet:892	skos:exactMatch
-GARD:7857	skos:exactMatch			Orphanet:158048	
 GARD:786	skos:exactMatch	MONDO:0019942	distal arthrogryposis	Orphanet:97120	skos:exactMatch
 GARD:7860	skos:exactMatch	MONDO:0012912	pseudopseudohypoparathyroidism	Orphanet:79445	skos:exactMatch
 GARD:7862	skos:exactMatch	MONDO:0018092	Vogt-Koyanagi-Harada disease	Orphanet:3437	skos:exactMatch

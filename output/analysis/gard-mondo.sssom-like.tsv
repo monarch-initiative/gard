@@ -8170,7 +8170,6 @@ GARD:12915	skos:exactMatch	Orphanet:319612	MONDO:0700042	X-linked mendelian susc
 GARD:12915	skos:narrowMatch	OMIM:300636	MONDO:0010386	immunodeficiency 33	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:12916	skos:exactMatch	Orphanet:71275	MONDO:0019107	Rh deficiency syndrome	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:12916	skos:narrowMatch	OMIM:268150	MONDO:0019107	Rh deficiency syndrome	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
-GARD:12916	skos:narrowMatch	OMIM:617970				semapv:ManualMappingCuration	proxy_existing
 GARD:12919	skos:exactMatch	Orphanet:293181	MONDO:0017385	malignant migrating partial seizures of infancy	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:12919	skos:narrowMatch	OMIM:613722	MONDO:0013389	developmental and epileptic encephalopathy, 12	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:12919	skos:narrowMatch	OMIM:614959	MONDO:0013989	developmental and epileptic encephalopathy, 14	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
@@ -9241,7 +9240,6 @@ GARD:2521	skos:narrowMatch	OMIM:268800	MONDO:0010006	Sandhoff disease	skos:exact
 GARD:2523	skos:exactMatch	Orphanet:2090	MONDO:0007679	GMS syndrome	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:2523	skos:narrowMatch	OMIM:138770	MONDO:0007679	GMS syndrome	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:2541	skos:exactMatch	Orphanet:1770	MONDO:0009302	XY type gonadal dysgenesis-associated anomalies syndrome	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
-GARD:2541	skos:narrowMatch	OMIM:233430				semapv:ManualMappingCuration	proxy_existing
 GARD:2542	skos:exactMatch	Orphanet:2855	MONDO:0017312	Perrault syndrome	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:2542	skos:narrowMatch	OMIM:233400	MONDO:0009300	Perrault syndrome 1	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:2542	skos:narrowMatch	OMIM:614129	MONDO:0013588	Perrault syndrome 3	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
@@ -12872,7 +12870,6 @@ GARD:676	skos:exactMatch	Orphanet:1062	MONDO:0007116	hereditary neurocutaneous a
 GARD:676	skos:narrowMatch	OMIM:106070	MONDO:0007116	hereditary neurocutaneous angioma	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:6760	skos:exactMatch	Orphanet:85193	MONDO:0019409	idiopathic juvenile osteoporosis	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:6760	skos:narrowMatch	OMIM:259750	MONDO:0019409	idiopathic juvenile osteoporosis	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
-GARD:6760	skos:narrowMatch	OMIM:615221				semapv:ManualMappingCuration	proxy_existing
 GARD:6763	skos:exactMatch	Orphanet:99931	MONDO:0008346	pulmonary hemosiderosis	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:6763	skos:narrowMatch	OMIM:178550	MONDO:0008346	pulmonary hemosiderosis	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:6763	skos:narrowMatch	OMIM:235500	MONDO:0009336	hemosiderosis, pulmonary, with deficiency of gamma-a globulin	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
@@ -13499,7 +13496,6 @@ GARD:7673	skos:exactMatch	Orphanet:823	MONDO:0019351	isolated spina bifida	skos:
 GARD:7673	skos:narrowMatch	OMIM:182940	MONDO:0020705	neural tube defects, susceptibility to	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:7673	skos:narrowMatch	OMIM:301410	MONDO:0010525	neural tube defects, X-linked	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:7673	skos:narrowMatch	OMIM:601634	MONDO:0011120	neural tube defects, folate-sensitive	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
-GARD:7687	skos:exactMatch	Orphanet:253				semapv:ManualMappingCuration	proxy_existing
 GARD:7690	skos:exactMatch	Orphanet:356	MONDO:0007656	Gerstmann-Straussler-Scheinker syndrome	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:7690	skos:narrowMatch	OMIM:137440	MONDO:0007656	Gerstmann-Straussler-Scheinker syndrome	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:7692	skos:exactMatch	Orphanet:826	MONDO:0005968	sporotrichosis	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
@@ -13895,7 +13891,6 @@ GARD:8410	skos:exactMatch	Orphanet:246	MONDO:0009903	postaxial acrofacial dysost
 GARD:8410	skos:narrowMatch	OMIM:263750	MONDO:0009903	postaxial acrofacial dysostosis	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:8414	skos:exactMatch	Orphanet:888	MONDO:0019508	van der Woude syndrome	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:8414	skos:narrowMatch	OMIM:119300	MONDO:0007333	van der Woude syndrome 1	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
-GARD:8414	skos:narrowMatch	OMIM:604547				semapv:ManualMappingCuration	proxy_existing
 GARD:8414	skos:narrowMatch	OMIM:606713	MONDO:0011712	van der Woude syndrome 2	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:8416	skos:exactMatch	Orphanet:398166	MONDO:0018363	focal facial dermal dysplasia	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:8416	skos:narrowMatch	OMIM:136500	MONDO:0007627	focal facial dermal dysplasia type I	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
@@ -13905,7 +13900,6 @@ GARD:8416	skos:narrowMatch	OMIM:614974	MONDO:0013997	focal facial dermal dysplas
 GARD:8419	skos:exactMatch	Orphanet:137902	MONDO:0008136	isolated optic nerve hypoplasia	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:8419	skos:narrowMatch	OMIM:165550	MONDO:0008136	isolated optic nerve hypoplasia	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:842	skos:exactMatch	Orphanet:2206	MONDO:0007127	diffuse idiopathic skeletal hyperostosis	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
-GARD:842	skos:narrowMatch	OMIM:106400				semapv:ManualMappingCuration	proxy_existing
 GARD:8421	skos:exactMatch	Orphanet:884	MONDO:0011146	tetrasomy 12p	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:8421	skos:narrowMatch	OMIM:601803	MONDO:0011146	tetrasomy 12p	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:8422	skos:exactMatch	Orphanet:709	MONDO:0009856	Peters plus syndrome	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
@@ -14208,7 +14202,6 @@ GARD:871	skos:exactMatch	Orphanet:848	MONDO:0019402	beta thalassemia	skos:exactM
 GARD:871	skos:narrowMatch	OMIM:603902	MONDO:0011381	dominant beta-thalassemia	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:871	skos:narrowMatch	OMIM:613985	MONDO:0013517	beta-thalassemia HBB/LCRB	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:8711	skos:exactMatch	Orphanet:268129	MONDO:0008448	spheroid body myopathy	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
-GARD:8711	skos:narrowMatch	OMIM:182920				semapv:ManualMappingCuration	proxy_existing
 GARD:8713	skos:exactMatch	Orphanet:93296	MONDO:0008702	achondrogenesis type II	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:8713	skos:narrowMatch	OMIM:200610	MONDO:0008702	achondrogenesis type II	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:8717	skos:exactMatch	Orphanet:166272	MONDO:0100325	odontochondrodysplasia 1	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
@@ -15153,7 +15146,6 @@ GARD:9953	skos:narrowMatch	OMIM:616568	MONDO:0014695	glioma susceptibility 9	sko
 GARD:9959	skos:exactMatch	Orphanet:83476	MONDO:0019376	West-Nile encephalitis	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:9959	skos:narrowMatch	OMIM:610379	MONDO:0012482	West Nile virus, susceptibility to	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:9963	skos:exactMatch	Orphanet:98764	MONDO:0012247	spinocerebellar ataxia type 27	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
-GARD:9963	skos:narrowMatch	OMIM:609307				semapv:ManualMappingCuration	proxy_existing
 GARD:9964	skos:exactMatch	Orphanet:97234	MONDO:0009865	glycogen storage disease due to phosphoglycerate mutase deficiency	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:9964	skos:narrowMatch	OMIM:261670	MONDO:0009865	glycogen storage disease due to phosphoglycerate mutase deficiency	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
 GARD:9965	skos:exactMatch	Orphanet:83639	MONDO:0012465	hypercoagulability syndrome due to glycosylphosphatidylinositol deficiency	skos:exactMatch	semapv:ManualMappingCuration	proxy_existing
@@ -28084,192 +28076,197 @@ GARD:9905	skos:narrowMatch	OMIM:614350	MONDO:0013710	Lynch syndrome 5	skos:exact
 GARD:9905	skos:narrowMatch	OMIM:614385	MONDO:0013725	colorectal cancer, hereditary nonpolyposis, type 7	skos:exactMatch	semapv:ManualMappingCuration	proxy_new
 GARD:995	skos:broadMatch	Orphanet:448242	MONDO:0018662	autosomal recessive brachyolmia	skos:exactMatch	semapv:ManualMappingCuration	proxy_new
 GARD:995	skos:exactMatch	OMIM:271530	MONDO:0010070	brachyolmia type 1, Hobaek type	skos:exactMatch	semapv:ManualMappingCuration	proxy_new
-GARD:15370	skos:exactMatch	OMIM:604547				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:15920	skos:exactMatch	OMIM:615221				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:16275	skos:exactMatch	OMIM:617970				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:16690	skos:narrowMatch	OMIM:618406				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:16891	skos:narrowMatch	OMIM:267800				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:17165	skos:narrowMatch	OMIM:141749				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:17614	skos:narrowMatch	OMIM:300910				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18240	skos:exactMatch	OMIM:267800				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18642	skos:narrowMatch	OMIM:141749				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18642	skos:narrowMatch	OMIM:142335				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18642	skos:narrowMatch	OMIM:142470				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18642	skos:narrowMatch	OMIM:305435				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18642	skos:narrowMatch	OMIM:613566				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18648	skos:narrowMatch	OMIM:141749				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18648	skos:narrowMatch	OMIM:142335				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18648	skos:narrowMatch	OMIM:142470				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18648	skos:narrowMatch	OMIM:305435				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18648	skos:narrowMatch	OMIM:613566				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18656	skos:exactMatch	OMIM:141749				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18657	skos:exactMatch	OMIM:142470				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18658	skos:exactMatch	OMIM:305435				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:18769	skos:exactMatch	Orphanet:2416				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19105	skos:exactMatch	Orphanet:90051				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19106	skos:exactMatch	Orphanet:90052				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19107	skos:exactMatch	Orphanet:90053				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19108	skos:exactMatch	Orphanet:90056				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19113	skos:exactMatch	Orphanet:90064				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19117	skos:exactMatch	Orphanet:90073				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19118	skos:exactMatch	Orphanet:90076				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19120	skos:exactMatch	Orphanet:90078				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19121	skos:exactMatch	Orphanet:90080				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19153	skos:exactMatch	Orphanet:91127				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19246	skos:exactMatch	Orphanet:94059				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19475	skos:exactMatch	Orphanet:98495				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19562	skos:exactMatch	Orphanet:98737				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19563	skos:exactMatch	Orphanet:98738				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19564	skos:exactMatch	Orphanet:98739				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19565	skos:exactMatch	Orphanet:98740				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19566	skos:exactMatch	Orphanet:98741				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19567	skos:exactMatch	Orphanet:98742				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19569	skos:exactMatch	Orphanet:98744				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19570	skos:exactMatch	Orphanet:98745				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19571	skos:exactMatch	Orphanet:98746				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19572	skos:exactMatch	Orphanet:98747				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19573	skos:exactMatch	Orphanet:98748				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19574	skos:exactMatch	Orphanet:98749				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:19884	skos:exactMatch	Orphanet:137698				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20255	skos:exactMatch	Orphanet:182222				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20270	skos:exactMatch	Orphanet:183466				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20271	skos:exactMatch	Orphanet:183469				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20274	skos:exactMatch	Orphanet:183481				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20308	skos:exactMatch	Orphanet:183607				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20309	skos:exactMatch	Orphanet:183616				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20358	skos:exactMatch	Orphanet:206634				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20395	skos:exactMatch	Orphanet:207090				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20512	skos:exactMatch	Orphanet:217080				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20574	skos:exactMatch	Orphanet:228215				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20598	skos:exactMatch	Orphanet:231080				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20637	skos:exactMatch	Orphanet:238621				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20651	skos:exactMatch	Orphanet:244275				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20748	skos:exactMatch	Orphanet:254685				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20898	skos:exactMatch	Orphanet:263352				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:20948	skos:exactMatch	Orphanet:268316				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21003	skos:exactMatch	Orphanet:269550				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21004	skos:exactMatch	Orphanet:269553				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21005	skos:exactMatch	Orphanet:269557				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21006	skos:exactMatch	Orphanet:269560				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21007	skos:exactMatch	Orphanet:269564				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21008	skos:exactMatch	Orphanet:269567				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21009	skos:exactMatch	Orphanet:269570				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21081	skos:exactMatch	Orphanet:280369				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21082	skos:exactMatch	Orphanet:280373				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21153	skos:exactMatch	Orphanet:289825				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21259	skos:exactMatch	Orphanet:306644				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21427	skos:exactMatch	Orphanet:319719				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21458	skos:exactMatch	Orphanet:324939				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21459	skos:exactMatch	Orphanet:324942				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21460	skos:exactMatch	Orphanet:324950				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21461	skos:exactMatch	Orphanet:324953				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21462	skos:exactMatch	Orphanet:324960				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21482	skos:exactMatch	Orphanet:325697				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21483	skos:exactMatch	Orphanet:325706				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21484	skos:exactMatch	Orphanet:325713				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21540	skos:exactMatch	Orphanet:357506				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21627	skos:exactMatch	Orphanet:391655				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21727	skos:exactMatch	Orphanet:404574				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21728	skos:exactMatch	Orphanet:404577				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21878	skos:exactMatch	Orphanet:448426				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21986	skos:exactMatch	Orphanet:481671				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:21997	skos:exactMatch	Orphanet:486955				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22051	skos:exactMatch	Orphanet:505395				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22059	skos:exactMatch	Orphanet:506207				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22060	skos:exactMatch	Orphanet:506210				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22061	skos:exactMatch	Orphanet:506213				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22062	skos:exactMatch	Orphanet:506216				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22063	skos:exactMatch	Orphanet:506219				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22064	skos:exactMatch	Orphanet:506222				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22065	skos:exactMatch	Orphanet:506225				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22079	skos:exactMatch	Orphanet:519266				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22080	skos:exactMatch	Orphanet:519268				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22082	skos:exactMatch	Orphanet:519272				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22087	skos:exactMatch	Orphanet:519282				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22088	skos:exactMatch	Orphanet:519284				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22089	skos:exactMatch	Orphanet:519286				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22090	skos:exactMatch	Orphanet:519288				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22091	skos:exactMatch	Orphanet:519290				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22094	skos:exactMatch	Orphanet:519296				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22095	skos:exactMatch	Orphanet:519298				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22096	skos:exactMatch	Orphanet:519300				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22097	skos:exactMatch	Orphanet:519302				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22099	skos:exactMatch	Orphanet:519306				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22100	skos:exactMatch	Orphanet:519309				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22101	skos:exactMatch	Orphanet:519311				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22102	skos:exactMatch	Orphanet:519313				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22103	skos:exactMatch	Orphanet:519315				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22104	skos:exactMatch	Orphanet:519317				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22105	skos:exactMatch	Orphanet:519319				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22106	skos:exactMatch	Orphanet:519321				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22107	skos:exactMatch	Orphanet:519323				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22110	skos:exactMatch	Orphanet:519329				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22111	skos:exactMatch	Orphanet:519331				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22113	skos:exactMatch	Orphanet:519337				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22117	skos:exactMatch	Orphanet:519345				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22118	skos:exactMatch	Orphanet:519347				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22120	skos:exactMatch	Orphanet:519351				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22121	skos:exactMatch	Orphanet:519353				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22148	skos:exactMatch	Orphanet:522043				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22150	skos:exactMatch	Orphanet:522506				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22151	skos:exactMatch	Orphanet:522508				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22152	skos:exactMatch	Orphanet:522510				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22153	skos:exactMatch	Orphanet:522512				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22154	skos:exactMatch	Orphanet:522514				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22155	skos:exactMatch	Orphanet:522516				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22156	skos:exactMatch	Orphanet:522518				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22157	skos:exactMatch	Orphanet:522520				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22158	skos:exactMatch	Orphanet:522522				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22159	skos:exactMatch	Orphanet:522524				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22160	skos:exactMatch	Orphanet:522526				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22161	skos:exactMatch	Orphanet:522528				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22162	skos:exactMatch	Orphanet:522530				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22163	skos:exactMatch	Orphanet:522532				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22164	skos:exactMatch	Orphanet:522534				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22165	skos:exactMatch	Orphanet:522536				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22166	skos:exactMatch	Orphanet:522538				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22167	skos:exactMatch	Orphanet:522540				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22168	skos:exactMatch	Orphanet:522542				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22169	skos:exactMatch	Orphanet:522546				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22170	skos:exactMatch	Orphanet:522548				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22171	skos:exactMatch	Orphanet:522550				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22172	skos:exactMatch	Orphanet:522552				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22173	skos:exactMatch	Orphanet:522554				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22174	skos:exactMatch	Orphanet:522556				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22175	skos:exactMatch	Orphanet:522558				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22176	skos:exactMatch	Orphanet:522560				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22177	skos:exactMatch	Orphanet:522562				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22178	skos:exactMatch	Orphanet:522564				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22179	skos:exactMatch	Orphanet:522566				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22180	skos:exactMatch	Orphanet:522568				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22181	skos:exactMatch	Orphanet:522570				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22182	skos:exactMatch	Orphanet:522572				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22183	skos:exactMatch	Orphanet:522574				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22184	skos:exactMatch	Orphanet:522576				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22185	skos:exactMatch	Orphanet:522578				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22187	skos:exactMatch	Orphanet:522584				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22188	skos:exactMatch	Orphanet:523000				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22189	skos:exactMatch	Orphanet:525677				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22219	skos:exactMatch	Orphanet:538238				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22228	skos:exactMatch	Orphanet:542323				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22237	skos:exactMatch	Orphanet:544590				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22265	skos:exactMatch	Orphanet:564127				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22266	skos:exactMatch	Orphanet:564178				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22290	skos:exactMatch	Orphanet:567556				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22291	skos:exactMatch	Orphanet:567558				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22292	skos:exactMatch	Orphanet:567560				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22293	skos:exactMatch	Orphanet:567562				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22330	skos:exactMatch	Orphanet:576742				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22438	skos:exactMatch	Orphanet:603699				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22444	skos:exactMatch	Orphanet:616874				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22449	skos:exactMatch	Orphanet:617307				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22450	skos:exactMatch	Orphanet:617310				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22451	skos:exactMatch	Orphanet:617313				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22457	skos:exactMatch	Orphanet:618899				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22459	skos:exactMatch	Orphanet:619249				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22488	skos:exactMatch	Orphanet:622720				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:22489	skos:exactMatch	Orphanet:622914				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:7857	skos:exactMatch	Orphanet:158048				semapv:ManualMappingCuration	proxy_new_via_other_path
-GARD:15005							unmapped
-GARD:15006							unmapped
-GARD:30000							unmapped
+GARD:12916	skos:narrowMatch	OMIM:617970				semapv:ManualMappingCuration	unmapped
+GARD:15370	skos:exactMatch	OMIM:604547				semapv:ManualMappingCuration	unmapped
+GARD:15920	skos:exactMatch	OMIM:615221				semapv:ManualMappingCuration	unmapped
+GARD:16275	skos:exactMatch	OMIM:617970				semapv:ManualMappingCuration	unmapped
+GARD:16690	skos:narrowMatch	OMIM:618406				semapv:ManualMappingCuration	unmapped
+GARD:16891	skos:narrowMatch	OMIM:267800				semapv:ManualMappingCuration	unmapped
+GARD:17165	skos:narrowMatch	OMIM:141749				semapv:ManualMappingCuration	unmapped
+GARD:17614	skos:narrowMatch	OMIM:300910				semapv:ManualMappingCuration	unmapped
+GARD:18240	skos:exactMatch	OMIM:267800				semapv:ManualMappingCuration	unmapped
+GARD:18642	skos:narrowMatch	OMIM:141749				semapv:ManualMappingCuration	unmapped
+GARD:18642	skos:narrowMatch	OMIM:142335				semapv:ManualMappingCuration	unmapped
+GARD:18642	skos:narrowMatch	OMIM:142470				semapv:ManualMappingCuration	unmapped
+GARD:18642	skos:narrowMatch	OMIM:305435				semapv:ManualMappingCuration	unmapped
+GARD:18642	skos:narrowMatch	OMIM:613566				semapv:ManualMappingCuration	unmapped
+GARD:18648	skos:narrowMatch	OMIM:141749				semapv:ManualMappingCuration	unmapped
+GARD:18648	skos:narrowMatch	OMIM:142335				semapv:ManualMappingCuration	unmapped
+GARD:18648	skos:narrowMatch	OMIM:142470				semapv:ManualMappingCuration	unmapped
+GARD:18648	skos:narrowMatch	OMIM:305435				semapv:ManualMappingCuration	unmapped
+GARD:18648	skos:narrowMatch	OMIM:613566				semapv:ManualMappingCuration	unmapped
+GARD:18656	skos:exactMatch	OMIM:141749				semapv:ManualMappingCuration	unmapped
+GARD:18657	skos:exactMatch	OMIM:142470				semapv:ManualMappingCuration	unmapped
+GARD:18658	skos:exactMatch	OMIM:305435				semapv:ManualMappingCuration	unmapped
+GARD:18769	skos:exactMatch	Orphanet:2416				semapv:ManualMappingCuration	unmapped
+GARD:19105	skos:exactMatch	Orphanet:90051				semapv:ManualMappingCuration	unmapped
+GARD:19106	skos:exactMatch	Orphanet:90052				semapv:ManualMappingCuration	unmapped
+GARD:19107	skos:exactMatch	Orphanet:90053				semapv:ManualMappingCuration	unmapped
+GARD:19108	skos:exactMatch	Orphanet:90056				semapv:ManualMappingCuration	unmapped
+GARD:19113	skos:exactMatch	Orphanet:90064				semapv:ManualMappingCuration	unmapped
+GARD:19117	skos:exactMatch	Orphanet:90073				semapv:ManualMappingCuration	unmapped
+GARD:19118	skos:exactMatch	Orphanet:90076				semapv:ManualMappingCuration	unmapped
+GARD:19120	skos:exactMatch	Orphanet:90078				semapv:ManualMappingCuration	unmapped
+GARD:19121	skos:exactMatch	Orphanet:90080				semapv:ManualMappingCuration	unmapped
+GARD:19153	skos:exactMatch	Orphanet:91127				semapv:ManualMappingCuration	unmapped
+GARD:19246	skos:exactMatch	Orphanet:94059				semapv:ManualMappingCuration	unmapped
+GARD:19475	skos:exactMatch	Orphanet:98495				semapv:ManualMappingCuration	unmapped
+GARD:19562	skos:exactMatch	Orphanet:98737				semapv:ManualMappingCuration	unmapped
+GARD:19563	skos:exactMatch	Orphanet:98738				semapv:ManualMappingCuration	unmapped
+GARD:19564	skos:exactMatch	Orphanet:98739				semapv:ManualMappingCuration	unmapped
+GARD:19565	skos:exactMatch	Orphanet:98740				semapv:ManualMappingCuration	unmapped
+GARD:19566	skos:exactMatch	Orphanet:98741				semapv:ManualMappingCuration	unmapped
+GARD:19567	skos:exactMatch	Orphanet:98742				semapv:ManualMappingCuration	unmapped
+GARD:19569	skos:exactMatch	Orphanet:98744				semapv:ManualMappingCuration	unmapped
+GARD:19570	skos:exactMatch	Orphanet:98745				semapv:ManualMappingCuration	unmapped
+GARD:19571	skos:exactMatch	Orphanet:98746				semapv:ManualMappingCuration	unmapped
+GARD:19572	skos:exactMatch	Orphanet:98747				semapv:ManualMappingCuration	unmapped
+GARD:19573	skos:exactMatch	Orphanet:98748				semapv:ManualMappingCuration	unmapped
+GARD:19574	skos:exactMatch	Orphanet:98749				semapv:ManualMappingCuration	unmapped
+GARD:19884	skos:exactMatch	Orphanet:137698				semapv:ManualMappingCuration	unmapped
+GARD:20255	skos:exactMatch	Orphanet:182222				semapv:ManualMappingCuration	unmapped
+GARD:20270	skos:exactMatch	Orphanet:183466				semapv:ManualMappingCuration	unmapped
+GARD:20271	skos:exactMatch	Orphanet:183469				semapv:ManualMappingCuration	unmapped
+GARD:20274	skos:exactMatch	Orphanet:183481				semapv:ManualMappingCuration	unmapped
+GARD:20308	skos:exactMatch	Orphanet:183607				semapv:ManualMappingCuration	unmapped
+GARD:20309	skos:exactMatch	Orphanet:183616				semapv:ManualMappingCuration	unmapped
+GARD:20358	skos:exactMatch	Orphanet:206634				semapv:ManualMappingCuration	unmapped
+GARD:20395	skos:exactMatch	Orphanet:207090				semapv:ManualMappingCuration	unmapped
+GARD:20512	skos:exactMatch	Orphanet:217080				semapv:ManualMappingCuration	unmapped
+GARD:20574	skos:exactMatch	Orphanet:228215				semapv:ManualMappingCuration	unmapped
+GARD:20598	skos:exactMatch	Orphanet:231080				semapv:ManualMappingCuration	unmapped
+GARD:20637	skos:exactMatch	Orphanet:238621				semapv:ManualMappingCuration	unmapped
+GARD:20651	skos:exactMatch	Orphanet:244275				semapv:ManualMappingCuration	unmapped
+GARD:20748	skos:exactMatch	Orphanet:254685				semapv:ManualMappingCuration	unmapped
+GARD:20898	skos:exactMatch	Orphanet:263352				semapv:ManualMappingCuration	unmapped
+GARD:20948	skos:exactMatch	Orphanet:268316				semapv:ManualMappingCuration	unmapped
+GARD:21003	skos:exactMatch	Orphanet:269550				semapv:ManualMappingCuration	unmapped
+GARD:21004	skos:exactMatch	Orphanet:269553				semapv:ManualMappingCuration	unmapped
+GARD:21005	skos:exactMatch	Orphanet:269557				semapv:ManualMappingCuration	unmapped
+GARD:21006	skos:exactMatch	Orphanet:269560				semapv:ManualMappingCuration	unmapped
+GARD:21007	skos:exactMatch	Orphanet:269564				semapv:ManualMappingCuration	unmapped
+GARD:21008	skos:exactMatch	Orphanet:269567				semapv:ManualMappingCuration	unmapped
+GARD:21009	skos:exactMatch	Orphanet:269570				semapv:ManualMappingCuration	unmapped
+GARD:21081	skos:exactMatch	Orphanet:280369				semapv:ManualMappingCuration	unmapped
+GARD:21082	skos:exactMatch	Orphanet:280373				semapv:ManualMappingCuration	unmapped
+GARD:21153	skos:exactMatch	Orphanet:289825				semapv:ManualMappingCuration	unmapped
+GARD:21259	skos:exactMatch	Orphanet:306644				semapv:ManualMappingCuration	unmapped
+GARD:21427	skos:exactMatch	Orphanet:319719				semapv:ManualMappingCuration	unmapped
+GARD:21458	skos:exactMatch	Orphanet:324939				semapv:ManualMappingCuration	unmapped
+GARD:21459	skos:exactMatch	Orphanet:324942				semapv:ManualMappingCuration	unmapped
+GARD:21460	skos:exactMatch	Orphanet:324950				semapv:ManualMappingCuration	unmapped
+GARD:21461	skos:exactMatch	Orphanet:324953				semapv:ManualMappingCuration	unmapped
+GARD:21462	skos:exactMatch	Orphanet:324960				semapv:ManualMappingCuration	unmapped
+GARD:21482	skos:exactMatch	Orphanet:325697				semapv:ManualMappingCuration	unmapped
+GARD:21483	skos:exactMatch	Orphanet:325706				semapv:ManualMappingCuration	unmapped
+GARD:21484	skos:exactMatch	Orphanet:325713				semapv:ManualMappingCuration	unmapped
+GARD:21540	skos:exactMatch	Orphanet:357506				semapv:ManualMappingCuration	unmapped
+GARD:21627	skos:exactMatch	Orphanet:391655				semapv:ManualMappingCuration	unmapped
+GARD:21727	skos:exactMatch	Orphanet:404574				semapv:ManualMappingCuration	unmapped
+GARD:21728	skos:exactMatch	Orphanet:404577				semapv:ManualMappingCuration	unmapped
+GARD:21878	skos:exactMatch	Orphanet:448426				semapv:ManualMappingCuration	unmapped
+GARD:21986	skos:exactMatch	Orphanet:481671				semapv:ManualMappingCuration	unmapped
+GARD:21997	skos:exactMatch	Orphanet:486955				semapv:ManualMappingCuration	unmapped
+GARD:22051	skos:exactMatch	Orphanet:505395				semapv:ManualMappingCuration	unmapped
+GARD:22059	skos:exactMatch	Orphanet:506207				semapv:ManualMappingCuration	unmapped
+GARD:22060	skos:exactMatch	Orphanet:506210				semapv:ManualMappingCuration	unmapped
+GARD:22061	skos:exactMatch	Orphanet:506213				semapv:ManualMappingCuration	unmapped
+GARD:22062	skos:exactMatch	Orphanet:506216				semapv:ManualMappingCuration	unmapped
+GARD:22063	skos:exactMatch	Orphanet:506219				semapv:ManualMappingCuration	unmapped
+GARD:22064	skos:exactMatch	Orphanet:506222				semapv:ManualMappingCuration	unmapped
+GARD:22065	skos:exactMatch	Orphanet:506225				semapv:ManualMappingCuration	unmapped
+GARD:22079	skos:exactMatch	Orphanet:519266				semapv:ManualMappingCuration	unmapped
+GARD:22080	skos:exactMatch	Orphanet:519268				semapv:ManualMappingCuration	unmapped
+GARD:22082	skos:exactMatch	Orphanet:519272				semapv:ManualMappingCuration	unmapped
+GARD:22087	skos:exactMatch	Orphanet:519282				semapv:ManualMappingCuration	unmapped
+GARD:22088	skos:exactMatch	Orphanet:519284				semapv:ManualMappingCuration	unmapped
+GARD:22089	skos:exactMatch	Orphanet:519286				semapv:ManualMappingCuration	unmapped
+GARD:22090	skos:exactMatch	Orphanet:519288				semapv:ManualMappingCuration	unmapped
+GARD:22091	skos:exactMatch	Orphanet:519290				semapv:ManualMappingCuration	unmapped
+GARD:22094	skos:exactMatch	Orphanet:519296				semapv:ManualMappingCuration	unmapped
+GARD:22095	skos:exactMatch	Orphanet:519298				semapv:ManualMappingCuration	unmapped
+GARD:22096	skos:exactMatch	Orphanet:519300				semapv:ManualMappingCuration	unmapped
+GARD:22097	skos:exactMatch	Orphanet:519302				semapv:ManualMappingCuration	unmapped
+GARD:22099	skos:exactMatch	Orphanet:519306				semapv:ManualMappingCuration	unmapped
+GARD:22100	skos:exactMatch	Orphanet:519309				semapv:ManualMappingCuration	unmapped
+GARD:22101	skos:exactMatch	Orphanet:519311				semapv:ManualMappingCuration	unmapped
+GARD:22102	skos:exactMatch	Orphanet:519313				semapv:ManualMappingCuration	unmapped
+GARD:22103	skos:exactMatch	Orphanet:519315				semapv:ManualMappingCuration	unmapped
+GARD:22104	skos:exactMatch	Orphanet:519317				semapv:ManualMappingCuration	unmapped
+GARD:22105	skos:exactMatch	Orphanet:519319				semapv:ManualMappingCuration	unmapped
+GARD:22106	skos:exactMatch	Orphanet:519321				semapv:ManualMappingCuration	unmapped
+GARD:22107	skos:exactMatch	Orphanet:519323				semapv:ManualMappingCuration	unmapped
+GARD:22110	skos:exactMatch	Orphanet:519329				semapv:ManualMappingCuration	unmapped
+GARD:22111	skos:exactMatch	Orphanet:519331				semapv:ManualMappingCuration	unmapped
+GARD:22113	skos:exactMatch	Orphanet:519337				semapv:ManualMappingCuration	unmapped
+GARD:22117	skos:exactMatch	Orphanet:519345				semapv:ManualMappingCuration	unmapped
+GARD:22118	skos:exactMatch	Orphanet:519347				semapv:ManualMappingCuration	unmapped
+GARD:22120	skos:exactMatch	Orphanet:519351				semapv:ManualMappingCuration	unmapped
+GARD:22121	skos:exactMatch	Orphanet:519353				semapv:ManualMappingCuration	unmapped
+GARD:22148	skos:exactMatch	Orphanet:522043				semapv:ManualMappingCuration	unmapped
+GARD:22150	skos:exactMatch	Orphanet:522506				semapv:ManualMappingCuration	unmapped
+GARD:22151	skos:exactMatch	Orphanet:522508				semapv:ManualMappingCuration	unmapped
+GARD:22152	skos:exactMatch	Orphanet:522510				semapv:ManualMappingCuration	unmapped
+GARD:22153	skos:exactMatch	Orphanet:522512				semapv:ManualMappingCuration	unmapped
+GARD:22154	skos:exactMatch	Orphanet:522514				semapv:ManualMappingCuration	unmapped
+GARD:22155	skos:exactMatch	Orphanet:522516				semapv:ManualMappingCuration	unmapped
+GARD:22156	skos:exactMatch	Orphanet:522518				semapv:ManualMappingCuration	unmapped
+GARD:22157	skos:exactMatch	Orphanet:522520				semapv:ManualMappingCuration	unmapped
+GARD:22158	skos:exactMatch	Orphanet:522522				semapv:ManualMappingCuration	unmapped
+GARD:22159	skos:exactMatch	Orphanet:522524				semapv:ManualMappingCuration	unmapped
+GARD:22160	skos:exactMatch	Orphanet:522526				semapv:ManualMappingCuration	unmapped
+GARD:22161	skos:exactMatch	Orphanet:522528				semapv:ManualMappingCuration	unmapped
+GARD:22162	skos:exactMatch	Orphanet:522530				semapv:ManualMappingCuration	unmapped
+GARD:22163	skos:exactMatch	Orphanet:522532				semapv:ManualMappingCuration	unmapped
+GARD:22164	skos:exactMatch	Orphanet:522534				semapv:ManualMappingCuration	unmapped
+GARD:22165	skos:exactMatch	Orphanet:522536				semapv:ManualMappingCuration	unmapped
+GARD:22166	skos:exactMatch	Orphanet:522538				semapv:ManualMappingCuration	unmapped
+GARD:22167	skos:exactMatch	Orphanet:522540				semapv:ManualMappingCuration	unmapped
+GARD:22168	skos:exactMatch	Orphanet:522542				semapv:ManualMappingCuration	unmapped
+GARD:22169	skos:exactMatch	Orphanet:522546				semapv:ManualMappingCuration	unmapped
+GARD:22170	skos:exactMatch	Orphanet:522548				semapv:ManualMappingCuration	unmapped
+GARD:22171	skos:exactMatch	Orphanet:522550				semapv:ManualMappingCuration	unmapped
+GARD:22172	skos:exactMatch	Orphanet:522552				semapv:ManualMappingCuration	unmapped
+GARD:22173	skos:exactMatch	Orphanet:522554				semapv:ManualMappingCuration	unmapped
+GARD:22174	skos:exactMatch	Orphanet:522556				semapv:ManualMappingCuration	unmapped
+GARD:22175	skos:exactMatch	Orphanet:522558				semapv:ManualMappingCuration	unmapped
+GARD:22176	skos:exactMatch	Orphanet:522560				semapv:ManualMappingCuration	unmapped
+GARD:22177	skos:exactMatch	Orphanet:522562				semapv:ManualMappingCuration	unmapped
+GARD:22178	skos:exactMatch	Orphanet:522564				semapv:ManualMappingCuration	unmapped
+GARD:22179	skos:exactMatch	Orphanet:522566				semapv:ManualMappingCuration	unmapped
+GARD:22180	skos:exactMatch	Orphanet:522568				semapv:ManualMappingCuration	unmapped
+GARD:22181	skos:exactMatch	Orphanet:522570				semapv:ManualMappingCuration	unmapped
+GARD:22182	skos:exactMatch	Orphanet:522572				semapv:ManualMappingCuration	unmapped
+GARD:22183	skos:exactMatch	Orphanet:522574				semapv:ManualMappingCuration	unmapped
+GARD:22184	skos:exactMatch	Orphanet:522576				semapv:ManualMappingCuration	unmapped
+GARD:22185	skos:exactMatch	Orphanet:522578				semapv:ManualMappingCuration	unmapped
+GARD:22187	skos:exactMatch	Orphanet:522584				semapv:ManualMappingCuration	unmapped
+GARD:22188	skos:exactMatch	Orphanet:523000				semapv:ManualMappingCuration	unmapped
+GARD:22189	skos:exactMatch	Orphanet:525677				semapv:ManualMappingCuration	unmapped
+GARD:22219	skos:exactMatch	Orphanet:538238				semapv:ManualMappingCuration	unmapped
+GARD:22228	skos:exactMatch	Orphanet:542323				semapv:ManualMappingCuration	unmapped
+GARD:22237	skos:exactMatch	Orphanet:544590				semapv:ManualMappingCuration	unmapped
+GARD:22265	skos:exactMatch	Orphanet:564127				semapv:ManualMappingCuration	unmapped
+GARD:22266	skos:exactMatch	Orphanet:564178				semapv:ManualMappingCuration	unmapped
+GARD:22290	skos:exactMatch	Orphanet:567556				semapv:ManualMappingCuration	unmapped
+GARD:22291	skos:exactMatch	Orphanet:567558				semapv:ManualMappingCuration	unmapped
+GARD:22292	skos:exactMatch	Orphanet:567560				semapv:ManualMappingCuration	unmapped
+GARD:22293	skos:exactMatch	Orphanet:567562				semapv:ManualMappingCuration	unmapped
+GARD:22330	skos:exactMatch	Orphanet:576742				semapv:ManualMappingCuration	unmapped
+GARD:22438	skos:exactMatch	Orphanet:603699				semapv:ManualMappingCuration	unmapped
+GARD:22444	skos:exactMatch	Orphanet:616874				semapv:ManualMappingCuration	unmapped
+GARD:22449	skos:exactMatch	Orphanet:617307				semapv:ManualMappingCuration	unmapped
+GARD:22450	skos:exactMatch	Orphanet:617310				semapv:ManualMappingCuration	unmapped
+GARD:22451	skos:exactMatch	Orphanet:617313				semapv:ManualMappingCuration	unmapped
+GARD:22457	skos:exactMatch	Orphanet:618899				semapv:ManualMappingCuration	unmapped
+GARD:22459	skos:exactMatch	Orphanet:619249				semapv:ManualMappingCuration	unmapped
+GARD:22488	skos:exactMatch	Orphanet:622720				semapv:ManualMappingCuration	unmapped
+GARD:22489	skos:exactMatch	Orphanet:622914				semapv:ManualMappingCuration	unmapped
+GARD:2541	skos:narrowMatch	OMIM:233430				semapv:ManualMappingCuration	unmapped
+GARD:6760	skos:narrowMatch	OMIM:615221				semapv:ManualMappingCuration	unmapped
+GARD:7687	skos:exactMatch	Orphanet:253				semapv:ManualMappingCuration	unmapped
+GARD:7857	skos:exactMatch	Orphanet:158048				semapv:ManualMappingCuration	unmapped
+GARD:8414	skos:narrowMatch	OMIM:604547				semapv:ManualMappingCuration	unmapped
+GARD:842	skos:narrowMatch	OMIM:106400				semapv:ManualMappingCuration	unmapped
+GARD:8711	skos:narrowMatch	OMIM:182920				semapv:ManualMappingCuration	unmapped
+GARD:9963	skos:narrowMatch	OMIM:609307				semapv:ManualMappingCuration	unmapped
