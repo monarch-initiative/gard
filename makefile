@@ -7,6 +7,7 @@ VERSION=v$(TODAY)
 # MAIN COMMANDS / GOALS ------------------------------------------------------------------------------------------------
 all: release/gard.owl deploy-release
 
+# release/...: Actually makes quite a few more artefacts
 release/gard.owl release/gard.sssom.tsv release/gard-mondo.sssom.tsv: | output/release/
 	 python3 -m gard_owl_ingest
 
