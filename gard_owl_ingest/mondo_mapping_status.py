@@ -242,22 +242,35 @@ def gard_mondo_mapping_status(
     outpath_mondo_sssom_curate = RELEASE_DIR / f'gard-mondo{file_suffix}_curation.sssom.tsv'
     write_tsv_with_comments(sssom_curate_df, MONDO_SSSOM_METADATA_PATH, outpath_mondo_sssom_curate)
 
-    # - gard-mondo.robot.template.sssom.tsv
-    robot_df = sssom_df.drop(columns=['mondo_predicate_id'])\
-        .sort_values(by=['object_id', 'subject_id', 'proxy_id'])
-    robot_df['predicate_id'] = robot_df['predicate_id'].apply(
-        lambda x: x.replace('skos:exactMatch', 'MONDO:equivalentTo'))
-    robot_subheader = [{
-        'subject_id': 'A oboInOwl:hasDbXref',
-        'predicate_id': '>A oboInOwl:source',
-        'object_id': 'ID',
-        'object_label': '',
-        'proxy_id': '>A oboInOwl:source',
-    }]
-    robot_df = pd.concat([pd.DataFrame(robot_subheader), robot_df])[[
-        'object_id', 'subject_id', 'predicate_id', 'proxy_id', 'object_label']]
-    outpath_mondo_robot_sssom = RELEASE_DIR / f'gard-mondo{file_suffix}.robot.template.sssom.tsv'
-    write_tsv_with_comments(robot_df, MONDO_SSSOM_METADATA_PATH, outpath_mondo_robot_sssom)
+    # - mondo-gard.robot.template.sssom.tsv
+    if file_suffix == '-exact':  # we only care about this robot template for exact matches
+        robot_df = sssom_df.drop(columns=['mondo_predicate_id'])\
+            .sort_values(by=['object_id', 'subject_id', 'proxy_id'])\
+            .rename(columns={
+                'subject_id': 'gard_id',
+                'object_id': 'mondo_id',
+                'proxy_id': 'source_external',
+                'predicate_id': 'source_type',
+                'object_label': 'mondo_label',
+            })
+        del robot_df['source_type']
+        del robot_df['mondo_label']
+        # robot_df['source_type'] = robot_df['source_type'].apply(
+        #     lambda x: x.replace('skos:exactMatch', 'MONDO:equivalentTo'))
+        robot_df['type'] = 'owl:Class'
+        robot_df['subset'] = 'http://purl.obolibrary.org/obo/mondo#gard_rare'
+        robot_subheader = [{
+            'mondo_id': 'ID',
+            'type': 'TYPE',
+            'gard_id': 'A oboInOwl:hasDbXref',
+            'source_external': '>A oboInOwl:source',
+            'subset': 'AI oboInOwl:inSubset',
+            # 'source_type': '>A oboInOwl:source',
+            # 'object_label': '',
+        }]
+        robot_df = pd.concat([pd.DataFrame(robot_subheader), robot_df])[list(robot_subheader[0].keys())]
+        outpath_mondo_robot_sssom = RELEASE_DIR / f'mondo-gard{file_suffix}.robot.template.tsv'
+        write_tsv_with_comments(robot_df, MONDO_SSSOM_METADATA_PATH, outpath_mondo_robot_sssom)
 
     # - sssom_df: save
     # - Has less rows because of 'chosen mappings'. Just keeping 1 edge
