@@ -269,8 +269,7 @@ def gard_mondo_mapping_status(
             # 'object_label': '',
         }]
         robot_df = pd.concat([pd.DataFrame(robot_subheader), robot_df])[list(robot_subheader[0].keys())]
-        outpath_mondo_robot_sssom = RELEASE_DIR / f'mondo-gard{file_suffix}.robot.template.tsv'
-        write_tsv_with_comments(robot_df, MONDO_SSSOM_METADATA_PATH, outpath_mondo_robot_sssom)
+        robot_df.to_csv(RELEASE_DIR / f'mondo-gard{file_suffix}.robot.template.tsv', index=False)
 
     # - sssom_df: save
     # - Has less rows because of 'chosen mappings'. Just keeping 1 edge
