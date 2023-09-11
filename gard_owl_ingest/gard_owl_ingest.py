@@ -6,12 +6,14 @@ https://drive.google.com/drive/folders/1jnBRzJNyShbf3vSq5ypvJYrVBiRr7iCb
 import os
 import subprocess
 import sys
+from pathlib import Path
 from typing import Dict, List
 
 import pandas as pd
 
-
-sys.path.insert(0, os.getcwd())
+THIS_DIR = Path(os.path.dirname(__file__))
+PROJECT_ROOT = THIS_DIR.parent
+sys.path.insert(0, str(PROJECT_ROOT))
 from gard_owl_ingest.config import CURIE, DATASOURCE_CSV, GARD_ONTOLOGY_IRI, GARD_PREFIX_MAP_STR, MAPPING_PREDICATE, \
     MAPPING_PREDICATES, OMIMPS_PREFIX_MAP_STR, OMIM_PREFIX_MAP_STR, ORDO_PREFIX_MAP_STR, OUTPATH_OWL, \
     OUTPATH_ROBOT_TEMPLATE, OUTPATH_SSSOM, ROBOT_PATH, SSSOM_METADATA_PATH

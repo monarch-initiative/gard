@@ -5,15 +5,17 @@ https://drive.google.com/drive/folders/1jnBRzJNyShbf3vSq5ypvJYrVBiRr7iCb
 """
 import os
 import sys
+from pathlib import Path
 from typing import Dict, List, Set, Tuple
 
 import pandas as pd
 
-from gard_owl_ingest.utils import write_tsv_with_comments
-
-sys.path.insert(0, os.getcwd())
+THIS_DIR = Path(os.path.dirname(__file__))
+PROJECT_ROOT = THIS_DIR.parent
+sys.path.insert(0, str(PROJECT_ROOT))
 from gard_owl_ingest.config import ANALYSIS_OUTDIR, CURIE, DATASOURCE_CSV, GARD_MONDO_OLD_SSSOM_TSV, MAPPING_PREDICATE, \
     MAPPING_PREDICATES, MONDO_SSSOM_METADATA_PATH, MONDO_SSSOM_TSV, RELEASE_DIR
+from gard_owl_ingest.utils import write_tsv_with_comments
 
 
 # todo: move this into gard_owl_ingest.py

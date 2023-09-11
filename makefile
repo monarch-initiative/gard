@@ -5,14 +5,13 @@ VERSION=v$(TODAY)
 
 
 # MAIN COMMANDS / GOALS ------------------------------------------------------------------------------------------------
-all: release/gard.owl deploy-release
+all: output/release/gard.owl deploy-release
 
-# release/...: Actually makes quite a few more artefacts
-release/gard.owl release/gard.sssom.tsv release/gard-mondo.sssom.tsv: | output/release/
+output/release/gard.owl output/release/gard.sssom.tsv output/release/gard-mondo.sssom.tsv output/release/gard-mondo-exact.sssom.tsv output/release/gard-mondo-exact_curation.sssom.tsv gard-mondo_curation.sssom.tsv: | output/release/
 	 python3 -m gard_owl_ingest
 
 # Analysis
-tmp/gard_terms_mapping_status.tsv tmp/obsoleted_gard_terms_in_mondo.tsv tmp/gard_unmapped_terms.txt: tmp/input/mondo.sssom.tsv
+output/analysis/gard-mondo.sssom-like-exact.tsv output/analysis/gard-mondo.sssom-like.tsv output/analysis/gard_terms_mapping_status-exact.csv output/analysis/gard_terms_mapping_status.csv output/analysis/gard_unmapped_terms-exact.txt output/analysis/gard_unmapped_terms.txt output/analysis/obsoleted_gard_terms_in_mondo.txt: tmp/input/mondo.sssom.tsv
 	python3 gard_owl_ingest/mondo_mapping_status.py
 
 # Utils
