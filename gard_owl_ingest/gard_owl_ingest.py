@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Dict, List
 
 import pandas as pd
+import requests
 
 THIS_DIR = Path(os.path.dirname(__file__))
 PROJECT_ROOT = THIS_DIR.parent
@@ -20,11 +21,27 @@ from gard_owl_ingest.config import CURIE, DATASOURCE_CSV, GARD_ONTOLOGY_IRI, GAR
 from gard_owl_ingest.mondo_mapping_status import gard_mondo_mapping_status, get_gard_native_mappings
 from gard_owl_ingest.utils import write_tsv_with_comments
 
+INPUTS = [
+    'http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv',
+    'http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_gard.sssom.tsv'
+]
+INPUT_URL_FILE_MAP = {
+    x: PROJECT_ROOT / 'tmp' / 'input' / x.split('/')[-1]
+    for x in INPUTS
+}
 
 # todo: later: split up OWL and SSSOM into different funcs
 def run_ingest(outpath_owl: str = OUTPATH_OWL, outpath_sssom: str = OUTPATH_SSSOM):
-    """Run the ingest"""
+    """Run ingest"""
     # Set up
+    # - get prereqs
+    for url, path in INPUT_URL_FILE_MAP.items():
+        if not os.path.exists(path):
+            response = requests.get(url)
+            if response.status_code == 200:
+                with open(path, "wb") as f:
+                    f.write(response.content)
+    # - read sources
     src_df = pd.read_csv(DATASOURCE_CSV).fillna('')
     mappings: Dict[CURIE: Dict[MAPPING_PREDICATE, List[CURIE]]] = get_gard_native_mappings()
 
@@ -66,7 +83,8 @@ def run_ingest(outpath_owl: str = OUTPATH_OWL, outpath_sssom: str = OUTPATH_SSSO
                     'object_id': obj,
                     'object_label': row.SourceName,
                     'subject_category': category,
-                    'object_category': category,  # todo: I think correct category same, but if narrow/broad, not 100% sure
+                    # todo: I think correct category same, but if narrow/broad, not 100% sure:
+                    'object_category': category,
                     'object_source': row.DataSource,
                     'mapping_justification': 'semapv:ManualMappingCuration',
                 }
@@ -99,8 +117,6 @@ def run_ingest(outpath_owl: str = OUTPATH_OWL, outpath_sssom: str = OUTPATH_SSSO
               f'--output "{outpath_owl}"'
     results = subprocess.run(command, capture_output=True, shell=True)
     print(results.stdout.decode())
-
-    return
 
 
 if __name__ == '__main__':

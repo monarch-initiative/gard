@@ -10,3 +10,5 @@ Run: `make install`
 
 ## Running
 Run: `make all`
+
+You may also periodically want to update the input files, which can be done via `make update-inputs`.

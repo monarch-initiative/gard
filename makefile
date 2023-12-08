@@ -1,13 +1,13 @@
 .DEFAULT_GOAL := all
-.PHONY: all download-inputs deploy-release
+.PHONY: all download-inputs update-inputs deploy-release
 TODAY ?=$(shell date +%Y-%m-%d)
 VERSION=v$(TODAY)
 
 
 # MAIN COMMANDS / GOALS ------------------------------------------------------------------------------------------------
-all: output/release/gard.owl deploy-release
+all: output/release/gard.owl
 
-output/release/gard.owl output/release/gard.sssom.tsv output/release/gard-mondo.sssom.tsv output/release/gard-mondo-exact.sssom.tsv output/release/gard-mondo-exact_curation.sssom.tsv gard-mondo_curation.sssom.tsv: | output/release/
+output/release/gard.owl output/release/gard.sssom.tsv output/release/gard-mondo.sssom.tsv output/release/gard-mondo-exact.sssom.tsv output/release/gard-mondo-exact_curation.sssom.tsv gard-mondo_curation.sssom.tsv: tmp/input/mondo.sssom.tsv tmp/input/mondo_hasdbxref_gard.sssom.tsv | output/release/
 	 python3 -m gard_owl_ingest
 
 # Analysis
@@ -32,6 +32,8 @@ tmp/input/mondo_hasdbxref_gard.sssom.tsv: tmp/input/
 
 download-inputs: tmp/input/mondo.sssom.tsv tmp/input/mondo_hasdbxref_gard.sssom.tsv
 
+update-inputs: download-inputs
+
 deploy-release: | output/release/
 	@test $(VERSION)
 	gh release create $(VERSION) --notes "New release." --title "$(VERSION)" output/release/*
@@ -39,6 +41,7 @@ deploy-release: | output/release/
 # SETUP / INSTALLATION -------------------------------------------------------------------------------------------------
 install:
 	pip install -r requirements.txt
+	make download-inputs
 
 # HELP -----------------------------------------------------------------------------------------------------------------
 help:
