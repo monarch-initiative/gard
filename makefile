@@ -34,6 +34,7 @@ download-inputs: tmp/input/mondo.sssom.tsv tmp/input/mondo_hasdbxref_gard.sssom.
 
 update-inputs: download-inputs
 
+# Requires GitHub CLI: https://cli.github.com/
 deploy-release: | output/release/
 	@test $(VERSION)
 	gh release create $(VERSION) --notes "New release." --title "$(VERSION)" output/release/*

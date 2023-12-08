@@ -13,8 +13,8 @@ import pandas as pd
 THIS_DIR = Path(os.path.dirname(__file__))
 PROJECT_ROOT = THIS_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT))
-from gard_owl_ingest.config import ANALYSIS_OUTDIR, CURIE, DATASOURCE_CSV, GARD_MONDO_OLD_SSSOM_TSV, MAPPING_PREDICATE, \
-    MAPPING_PREDICATES, MONDO_SSSOM_METADATA_PATH, MONDO_SSSOM_TSV, RELEASE_DIR
+from gard_owl_ingest.config import ANALYSIS_OUTDIR, CURIE, DATASOURCE_CSV, GARD_MONDO_OLD_SSSOM_TSV, \
+    MAPPING_PREDICATE, MAPPING_PREDICATES, MONDO_SSSOM_METADATA_PATH, MONDO_SSSOM_TSV, RELEASE_DIR
 from gard_owl_ingest.utils import write_tsv_with_comments
 
 
@@ -63,8 +63,9 @@ def gard_mondo_mapping_status(
 
     Side effects:
     - Saves several files"""
+    exact_pred = 'skos:exactMatch'
     file_suffix = '' if not mondo_predicate_filter and not gard_predicate_filter \
-        else '-exact' if mondo_predicate_filter == ['skos:exactMatch'] and gard_predicate_filter == ['skos:exactMatch'] \
+        else '-exact' if mondo_predicate_filter == [exact_pred] and gard_predicate_filter == [exact_pred] \
         else '-custom'
     # Read data sources
     gard_df = pd.read_csv(DATASOURCE_CSV).fillna('')
@@ -199,7 +200,8 @@ def gard_mondo_mapping_status(
     sssom_curate_df = sssom_like_df[sssom_like_df['gard_mondo_mapping_type'] != 'unmapped']
     sssom_curate_df = sssom_curate_df[sssom_curate_df['gard_mondo_mapping_type'] != 'direct_existing']
     sssom_curate_df = sssom_curate_df[[col for col in sssom_curate_df.columns if col != 'gard_mondo_mapping_type']]
-    sssom_curate_df = sssom_curate_df.rename(columns={'object_id': 'proxy_id', 'mondo_id': 'object_id', 'mondo_label': 'object_label'})
+    sssom_curate_df = sssom_curate_df.rename(columns={
+        'object_id': 'proxy_id', 'mondo_id': 'object_id', 'mondo_label': 'object_label'})
     sssom_curate_df = sssom_curate_df.reindex(columns=[
         'subject_id', 'predicate_id', 'object_id', 'object_label', 'mapping_justification', 'proxy_id',
         'mondo_predicate_id'])
@@ -235,7 +237,7 @@ def gard_mondo_mapping_status(
             else 'skos:relatedMatch'
         chosen_mappings[term] = mappings_by_pred[pred][0]
 
-    # - sssom_df: Has less rows because of 'chosen mappings'. Just keeping 1 edge
+    # - sssom_df: Has fewer rows because of 'chosen mappings'. Just keeping 1 edge
     sssom_df = pd.DataFrame(chosen_mappings.values())
 
     # - modify & save curation df
@@ -261,20 +263,21 @@ def gard_mondo_mapping_status(
         #     lambda x: x.replace('skos:exactMatch', 'MONDO:equivalentTo'))
         robot_df['type'] = 'owl:Class'
         robot_df['subset'] = 'http://purl.obolibrary.org/obo/mondo#gard_rare'
+        robot_df['subset_source'] = robot_df['gard_id']
         robot_subheader = [{
             'mondo_id': 'ID',
             'type': 'TYPE',
             'gard_id': 'A oboInOwl:hasDbXref',
             'source_external': '>A oboInOwl:source',
             'subset': 'AI oboInOwl:inSubset',
-            # 'source_type': '>A oboInOwl:source',
+            'subset_source': '>A oboInOwl:source',
             # 'object_label': '',
         }]
         robot_df = pd.concat([pd.DataFrame(robot_subheader), robot_df])[list(robot_subheader[0].keys())]
         robot_df.to_csv(RELEASE_DIR / f'mondo-gard{file_suffix}.robot.template.tsv', index=False, sep='\t')
 
     # - sssom_df: save
-    # - Has less rows because of 'chosen mappings'. Just keeping 1 edge
+    # - Has fewer rows because of 'chosen mappings'. Just keeping 1 edge
     sssom_df = sssom_df.drop(columns=['proxy_id', 'mondo_predicate_id']).sort_values(by=['predicate_id', 'subject_id'])
     outpath_mondo_sssom = RELEASE_DIR / f'gard-mondo{file_suffix}.sssom.tsv'
     write_tsv_with_comments(sssom_df, MONDO_SSSOM_METADATA_PATH, outpath_mondo_sssom)
